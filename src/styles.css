@@ -33,10 +33,12 @@
   --serif: "Fraunces", Georgia, "Times New Roman", serif;
   --sans: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
 
-  --r-xl: 32px;
-  --r-lg: 24px;
-  --r: 20px;
-  --r-sm: 12px;
+  /* Corners: gently eased, not round. No pills, no circles. */
+  --r-xl: 14px;
+  --r-lg: 12px;
+  --r: 10px;
+  --r-sm: 8px;
+  --r-xs: 6px;
   --shadow: 0 12px 32px rgba(70, 45, 20, .09);
   --shadow-sm: 0 2px 10px rgba(70, 45, 20, .06);
 
@@ -90,7 +92,7 @@ button { cursor: pointer; }
   display: inline-flex; align-items: center; justify-content: center;
   width: var(--btn-w); height: var(--btn-h); flex: none;
   padding: 0 16px;
-  border: 2px solid var(--wine); border-radius: 999px;
+  border: 2px solid var(--wine); border-radius: var(--r-sm);
   background: var(--wine); color: #fff;
   font: 600 1rem/1 var(--sans); letter-spacing: .01em;
   text-decoration: none; white-space: nowrap;
@@ -123,16 +125,16 @@ button { cursor: pointer; }
   width: 140px; height: 44px; line-height: 44px; flex: none;
   text-align: center; white-space: nowrap;
   color: var(--ink); text-decoration: none; font-weight: 600; font-size: .95rem;
-  border-radius: 999px;
+  border-radius: var(--r-sm);
   transition: background .2s, color .2s;
 }
 .nav-a:hover { background: var(--sand); }
 .nav-a.is-active { color: var(--wine); background: var(--sand); }
-.lang { display: flex; gap: 4px; flex: none; margin-left: 16px; padding: 4px; background: var(--sand); border-radius: 999px; }
+.lang { display: flex; gap: 4px; flex: none; margin-left: 16px; padding: 4px; background: var(--sand); border-radius: var(--r); }
 .lang-a {
   width: 38px; height: 36px; line-height: 36px; text-align: center;
   font-size: .8rem; font-weight: 700; letter-spacing: .04em;
-  color: var(--muted); text-decoration: none; border-radius: 999px;
+  color: var(--muted); text-decoration: none; border-radius: var(--r-xs);
 }
 .lang-a.is-active { background: var(--surface); color: var(--wine); box-shadow: var(--shadow-sm); }
 /* The request button sits in the header bar at every width, right before the menu button.
@@ -201,7 +203,7 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--w
   height: 156px; padding: 20px;
   background: var(--surface); border: 1px solid var(--line); border-radius: var(--r);
 }
-.fact-ic { width: 48px; height: 48px; margin-bottom: 14px; display: grid; place-items: center; border-radius: 50%; background: var(--green-soft); color: var(--green); }
+.fact-ic { width: 48px; height: 48px; margin-bottom: 14px; display: grid; place-items: center; border-radius: var(--r); background: var(--green-soft); color: var(--green); }
 .fact strong { width: 100%; height: 28px; font: 600 1.15rem/28px var(--serif); white-space: nowrap; }
 .fact span:last-child { width: 100%; height: 24px; font-size: .88rem; line-height: 24px; color: var(--muted); white-space: nowrap; }
 
@@ -248,7 +250,7 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--w
   transition: transform .2s, box-shadow .2s;
 }
 .chip:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
-.chip img { width: 88px; height: 88px; border-radius: 50%; object-fit: cover; }
+.chip img { width: 88px; height: 88px; border-radius: var(--r); object-fit: cover; }
 
 /* ---------- Location (home): the photo is shown whole, the text sits beside it ---------- */
 .loc { display: grid; grid-template-columns: 7fr 5fr; gap: 64px; align-items: center; }
@@ -294,16 +296,16 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--w
 .gal-nav {
   position: absolute; top: 50%; width: 44px; height: 44px; margin-top: -22px;
   display: grid; place-items: center;
-  background: rgba(255, 255, 255, .92); border: 0; border-radius: 50%; box-shadow: var(--shadow-sm); color: var(--ink);
+  background: rgba(255, 255, 255, .92); border: 0; border-radius: var(--r-sm); box-shadow: var(--shadow-sm); color: var(--ink);
   transition: background .2s;
 }
 .gal-nav:hover { background: #fff; }
 .gal-prev { left: 12px; }
 .gal-next { right: 12px; }
-.gal-count { position: absolute; right: 12px; bottom: 12px; width: 60px; height: 30px; line-height: 30px; text-align: center; background: rgba(46, 42, 38, .7); color: #fff; font-size: .82rem; border-radius: 999px; }
+.gal-count { position: absolute; right: 12px; bottom: 12px; width: 60px; height: 30px; line-height: 30px; text-align: center; background: rgba(46, 42, 38, .7); color: #fff; font-size: .82rem; border-radius: var(--r-xs); }
 .gal-count b { font-weight: 600; }
 .gal-thumbs { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 8px; margin-top: 8px; }
-.gal-th { padding: 0; border: 2px solid transparent; border-radius: 10px; overflow: hidden; background: none; aspect-ratio: 16 / 9; opacity: .7; transition: opacity .2s, border-color .2s; }
+.gal-th { padding: 0; border: 2px solid transparent; border-radius: var(--r-xs); overflow: hidden; background: none; aspect-ratio: 16 / 9; opacity: .7; transition: opacity .2s, border-color .2s; }
 .gal-th img { width: 100%; height: 100%; object-fit: cover; }
 .gal-th:hover, .gal-th.is-active { opacity: 1; }
 .gal-th.is-active { border-color: var(--wine); }
@@ -319,7 +321,7 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--w
 
 .policies { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
 .policy { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 18px; padding: 24px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); }
-.policy-ic { width: 56px; height: 56px; display: grid; place-items: center; border-radius: 50%; background: var(--gold-soft); color: var(--ink); }
+.policy-ic { width: 56px; height: 56px; display: grid; place-items: center; border-radius: var(--r); background: var(--gold-soft); color: var(--ink); }
 .policy-ic img { width: 30px; height: 30px; }
 .policy-ic .ic { width: 30px; height: 30px; stroke-width: 2; }
 .policy h3 { font-size: 1.2rem; height: 56px; display: flex; align-items: center; }
@@ -337,9 +339,9 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--w
 .hint { height: 24px; line-height: 24px; margin: 0; font-size: .82rem; color: var(--error); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .field.has-error input, .field.has-error select, .field.has-error textarea { border-color: var(--error); }
 .room-opts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
-.room-opt { position: relative; display: block; padding: 8px 8px 12px; background: var(--bg); border: 2px solid var(--line); border-radius: 16px; cursor: pointer; text-align: center; transition: border-color .2s, background .2s; }
+.room-opt { position: relative; display: block; padding: 8px 8px 12px; background: var(--bg); border: 2px solid var(--line); border-radius: var(--r); cursor: pointer; text-align: center; transition: border-color .2s, background .2s; }
 .room-opt input { position: absolute; opacity: 0; pointer-events: none; }
-.room-opt img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 10px; margin-bottom: 8px; }
+.room-opt img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--r-xs); margin-bottom: 8px; }
 .room-opt strong { display: block; height: 26px; font: 600 1.1rem/26px var(--serif); }
 .room-opt span { display: block; height: 22px; line-height: 22px; font-size: .82rem; font-weight: 400; color: var(--muted); white-space: nowrap; }
 .room-opt:hover { border-color: var(--muted); }
@@ -353,7 +355,7 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--w
 
 .req-ok { text-align: center; padding: 56px 36px; }
 .req-ok[hidden], .req-form[hidden] { display: none; }
-.ok-ic { width: 72px; height: 72px; margin: 0 auto 20px; display: grid; place-items: center; border-radius: 50%; background: var(--green-soft); color: var(--green); }
+.ok-ic { width: 72px; height: 72px; margin: 0 auto 20px; display: grid; place-items: center; border-radius: var(--r); background: var(--green-soft); color: var(--green); }
 .ok-ic .ic { width: 36px; height: 36px; stroke-width: 2.2; }
 .req-ok > p { max-width: 46ch; margin: 14px auto 28px; color: var(--muted); }
 .ok-list { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 8px 20px; max-width: 520px; margin: 0 auto 32px; padding: 24px; background: var(--bg); border-radius: var(--r); text-align: left; font-size: .95rem; }
@@ -386,7 +388,7 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--w
 /* ---------- Activities ---------- */
 .sec-act { padding: 72px 0; scroll-margin-top: var(--hdr-h); }
 .act-head { display: flex; align-items: center; gap: 18px; margin-bottom: 32px; }
-.act-head img { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; flex: none; }
+.act-head img { width: 72px; height: 72px; border-radius: var(--r); object-fit: cover; flex: none; }
 .tips { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
 .tip { padding: 22px 24px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); }
 .tip h3 { font-size: 1.2rem; line-height: 1.25; }
@@ -413,7 +415,7 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--w
 .lb-fig { width: min(92vw, 1100px); }
 .lb-img { width: 100%; aspect-ratio: 850 / 478; object-fit: contain; border-radius: var(--r-sm); background: #1e1a16; }
 .lb-cap { height: 44px; line-height: 44px; text-align: center; font-size: .95rem; color: rgba(255, 255, 255, .85); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.lb-btn { position: fixed; z-index: 2; width: 52px; height: 52px; display: grid; place-items: center; background: rgba(255, 255, 255, .14); border: 0; border-radius: 50%; color: #fff; transition: background .2s; }
+.lb-btn { position: fixed; z-index: 2; width: 52px; height: 52px; display: grid; place-items: center; background: rgba(255, 255, 255, .14); border: 0; border-radius: var(--r-sm); color: #fff; transition: background .2s; }
 .lb-btn:hover { background: rgba(255, 255, 255, .28); }
 .lb-close { top: 20px; right: 20px; }
 .lb-prev { left: 20px; top: 50%; margin-top: -26px; }
@@ -432,7 +434,7 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--w
   .lang { margin-left: auto; }
   .burger {
     display: grid; place-items: center; width: 48px; height: 48px; margin-left: 12px; flex: none;
-    background: var(--sand); border: 0; border-radius: 50%;
+    background: var(--sand); border: 0; border-radius: var(--r-sm);
   }
   .burger span, .burger span::before, .burger span::after { display: block; width: 20px; height: 2px; background: var(--ink); border-radius: 2px; content: ""; position: relative; transition: transform .2s, opacity .2s; }
   .burger span::before { position: absolute; top: -6px; }
