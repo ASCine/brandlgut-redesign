@@ -135,9 +135,11 @@ button { cursor: pointer; }
   color: var(--muted); text-decoration: none; border-radius: 999px;
 }
 .lang-a.is-active { background: var(--surface); color: var(--wine); box-shadow: var(--shadow-sm); }
+/* The request button sits in the header bar at every width, right before the menu button.
+   It is never repeated inside the unfolded menu. */
 .hdr-cta { margin-left: 16px; }
-/* On the request page itself the header button would only point back to the same page. */
-.page-request .hdr-cta { visibility: hidden; }
+/* Second language switch for the unfolded menu; only used on phones, where the header has no room for it. */
+.nav-lang { display: none; }
 .burger { display: none; }
 
 /* ---------- Sections ---------- */
@@ -484,9 +486,18 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--w
   .prose { padding: 28px 22px; }
 }
 
-/* Phones: no room for the header button next to logo, language switch and menu. */
+/* Phones: logo, request button, menu button. The language switch moves into the unfolded menu. */
 @media (max-width: 639px) {
-  .hdr-cta { display: none; }
+  .hdr-lang { display: none; }
+  .nav-lang { display: flex; align-self: flex-start; margin: 12px 0 0 14px; }
+  .hdr-cta { width: 128px; height: 40px; margin-left: auto; padding: 0 8px; font-size: .84rem; }
+  .burger { width: 44px; height: 44px; margin-left: 6px; }
+  .brand { width: auto; gap: 8px; }
+  .brand-mark { width: 40px; height: 40px; }
+  .brand-word { width: 98px; height: 27px; }
+}
+@media (max-width: 349px) {
+  .hdr .brand-word { display: none; }
 }
 
 @media (max-width: 599px) {
@@ -494,11 +505,6 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--w
   :root { --pad: 16px; }
   h2 { font-size: 1.7rem; }
   .eyebrow { font-size: .72rem; letter-spacing: .12em; }
-  .brand { width: auto; gap: 8px; }
-  .brand-mark { width: 40px; height: 40px; }
-  .brand-word { width: 98px; height: 27px; }
-  .lang-a { width: 32px; }
-  .burger { width: 44px; height: 44px; margin-left: 8px; }
   .btn-row .btn, .sec-foot .btn, .split-txt .btn, .loc .btn, .cta .btn { width: 100%; }
   .cta .btn { max-width: 320px; }
   .facts, .cards-4 { grid-template-columns: minmax(0, 1fr); }

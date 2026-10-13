@@ -99,9 +99,10 @@ ${alternates}
     </a>
     <nav class="nav" id="nav" aria-label="${esc(t.btn.menu)}">
       ${navLinks}
+      <div class="lang nav-lang">${langLinks}</div>
     </nav>
-    <div class="lang">${langLinks}</div>
-    ${btn(u('request'), t.btn.request, 'btn-sm hdr-cta')}
+    <div class="lang hdr-lang">${langLinks}</div>
+    ${btn(key === 'request' ? '#req-form' : u('request'), t.btn.request, 'btn-sm hdr-cta')}
     <button class="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="${esc(t.btn.menu)}"><span></span></button>
   </div>
 </header>
