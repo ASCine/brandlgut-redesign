@@ -460,22 +460,27 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--w
   .loc { gap: 40px; }
 }
 
+/* Below 1024px the hero text no longer fits beside the button on the photo:
+   the photo is shown on its own and the text follows below it. */
+@media (max-width: 1023px) {
+  .hero-panel { height: auto; overflow: visible; background: none; border-radius: 0; }
+  .hero-panel::after { display: none; }
+  .hero-img { position: static; height: auto; aspect-ratio: 16 / 9; border-radius: var(--r-xl); }
+  .hero-txt { position: static; flex-direction: column; align-items: flex-start; gap: 22px; padding: 28px 8px 0; color: var(--ink); }
+  .hero .eyebrow { color: var(--gold); text-shadow: none; }
+  .hero h1 { height: 2.2em; white-space: normal; text-shadow: none; }
+  .hero .lead { margin-top: 12px; font-size: 1.05rem; color: var(--muted); text-shadow: none; }
+  .hero .btn { background: var(--wine); border-color: var(--wine); color: #fff; }
+  .br-m { display: inline; }
+}
+
 @media (max-width: 859px) {
   :root { --hdr-h: 68px; --pad: 20px; }
   .sec { padding: 64px 0; }
   .sec-tight { padding: 28px 0 64px; }
   .sec-facts { padding: 24px 0 0; }
-  /* Narrow screens: the photo is shown on its own and the text follows below it. */
   .hero { padding: 12px 12px 0; }
-  .hero-panel { height: auto; overflow: visible; background: none; border-radius: 0; }
-  .hero-panel::after { display: none; }
-  .hero-img { position: static; height: auto; aspect-ratio: 4 / 3; object-position: 32% 60%; border-radius: var(--r-lg); }
-  .hero-txt { position: static; flex-direction: column; align-items: stretch; gap: 22px; padding: 24px 8px 0; color: var(--ink); }
-  .hero .eyebrow { color: var(--gold); text-shadow: none; }
-  .hero h1 { height: 2.2em; white-space: normal; text-shadow: none; }
-  .hero .lead { height: 3.2em; margin-top: 12px; font-size: 1.05rem; color: var(--muted); white-space: normal; text-shadow: none; }
-  .hero .btn { width: 100%; background: var(--wine); border-color: var(--wine); color: #fff; }
-  .br-m { display: inline; }
+  .hero-img { border-radius: var(--r-lg); }
   .split, .phead-in, .loc { grid-template-columns: minmax(0, 1fr); gap: 32px; }
   .ftr-in { grid-template-columns: minmax(0, 1fr) 150px; }
   .ftr-brand { grid-column: 1 / -1; }
@@ -491,6 +496,7 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--w
 /* Phones: logo, request button, menu button. The language switch moves into the unfolded menu. */
 @media (max-width: 639px) {
   .hdr-lang { display: none; }
+  .hero .lead { height: 3.2em; white-space: normal; }
   .nav-lang { display: flex; align-self: flex-start; margin: 12px 0 0 14px; }
   .hdr-cta { width: 128px; height: 40px; margin-left: auto; padding: 0 8px; font-size: .84rem; }
   .burger { width: 44px; height: 44px; margin-left: 6px; }
@@ -504,6 +510,10 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--w
 
 @media (max-width: 599px) {
   body { font-size: 16px; }
+  .hero { padding: 8px 8px 0; }
+  .hero-img { aspect-ratio: 4 / 3; object-position: 32% 60%; }
+  .hero-txt { align-items: stretch; }
+  .hero .btn { width: 100%; }
   :root { --pad: 16px; }
   h2 { font-size: 1.7rem; }
   .eyebrow { font-size: .72rem; letter-spacing: .12em; }
