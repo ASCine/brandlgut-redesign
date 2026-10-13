@@ -13,6 +13,7 @@ const GRID_W = 96, GRID_H = 54;                  // resolution of the light esti
 const SIGMA = 7;                                 // in grid cells: only large-scale casts are corrected
 const TARGET_WHITE_L = 90.5;                       // brightness the white surfaces are evened out to
 const EXPOSURE_LIMIT = [0.95, 1.08];
+const KNEE = 0.94;                               // highlight roll-off starts here (linear light)
 
 const toLin = new Float32Array(256);
 for (let i = 0; i < 256; i++) { const c = i / 255; toLin[i] = c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4; }
@@ -106,9 +107,10 @@ export async function matchRoomColours(file, { strength = STRENGTH } = {}) {
       // Windows and lamps that are (nearly) blown out are already white: leave their colour alone.
       const hl = smooth(0.86, 0.995, Math.max(r0, g0, b0)), keep = 1 - hl;
       let r = r0 * (hl + keep * mix(gr)) * exposure, g = g0 * (hl + keep * mix(gg)) * exposure, b = b0 * (hl + keep * mix(gb)) * exposure;
-      // Roll highlights off softly instead of clipping a channel (keeps windows and lamps natural).
+      // Only the very brightest values are rolled off softly instead of clipping a channel. The knee
+      // sits high on purpose: white bedding lives just below it and must keep all of its fine texture.
       const m = Math.max(r, g, b);
-      if (m > 0.82) { const k = (0.82 + (1 - 0.82) * Math.tanh((m - 0.82) / (1 - 0.82))) / m; r *= k; g *= k; b *= k; }
+      if (m > KNEE) { const k = (KNEE + (1 - KNEE) * Math.tanh((m - KNEE) / (1 - KNEE))) / m; r *= k; g *= k; b *= k; }
       out[q] = toSrgb(r); out[q + 1] = toSrgb(g); out[q + 2] = toSrgb(b);
     }
   }

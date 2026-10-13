@@ -25,12 +25,15 @@ const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
 const rootOf = key => key === 'home' ? '../' : '../../';
 const url = (root, lang, key) => `${root}${lang}/${SLUGS[key][lang] ? SLUGS[key][lang] + '/' : ''}`;
 
+// The photo at its full original size, and the small version for cards and thumbnails.
+const full = (root, key) => `${root}assets/img/${manifest[key].files.find(x => x.w === manifest[key].w).f}`;
+const small = (root, key) => `${root}assets/img/${manifest[key].files[0].f}`;
+
 function pic(root, key, { alt = '', sizes = '100vw', cls = '', eager = false } = {}) {
   const m = manifest[key];
   if (!m) throw new Error('missing image ' + key);
-  const base = `${root}assets/img/${key}`;
-  const srcset = m.widths.map(w => `${base}-${w}.webp ${w}w`).join(', ');
-  return `<img${cls ? ` class="${cls}"` : ''} src="${base}-${m.w}.webp" srcset="${srcset}" sizes="${sizes}" width="${m.w}" height="${m.h}" alt="${esc(alt)}"${eager ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async">`;
+  const srcset = m.files.map(x => `${root}assets/img/${x.f} ${x.w}w`).join(', ');
+  return `<img${cls ? ` class="${cls}"` : ''} src="${full(root, key)}" srcset="${srcset}" sizes="${sizes}" width="${m.w}" height="${m.h}" alt="${esc(alt)}"${eager ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async">`;
 }
 
 const ICONS = {
@@ -81,7 +84,7 @@ function layout({ lang, key, title, desc, body, band = false, extraScript = '' }
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(desc)}">
 <meta property="og:type" content="website">
-<meta property="og:image" content="${root}assets/img/galerie-01/01-das-ist-unser-brandlgut-850.webp">
+<meta property="og:image" content="${full(root, 'galerie-01/01-das-ist-unser-brandlgut')}">
 ${alternates}
 <link rel="icon" href="${root}assets/img/logo-mark.svg" type="image/svg+xml">
 <link rel="preload" href="${root}assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -285,9 +288,9 @@ function rooms(lang) {
     const s = p.specs[r.id];
     const rows = [[p.spec.guests, r.guests], [p.spec.size, `ca. ${r.size} m²`], [p.spec.outdoor, s.outdoor], [p.spec.bath, s.bath]];
     if (s.kitchen) rows.push([p.spec.kitchen, s.kitchen]);
-    const thumbs = keys.map((k, i) => `<button class="gal-th${i === 0 ? ' is-active' : ''}" type="button" data-i="${i}" aria-label="${esc(t.unit.photo)} ${i + 1}"><img src="${root}assets/img/${k}-480.webp" alt="" width="160" height="90" loading="lazy" decoding="async"></button>`).join('');
+    const thumbs = keys.map((k, i) => `<button class="gal-th${i === 0 ? ' is-active' : ''}" type="button" data-i="${i}" aria-label="${esc(t.unit.photo)} ${i + 1}"><img src="${small(root, k)}" alt="" width="160" height="90" loading="lazy" decoding="async"></button>`).join('');
     return `<article class="room" id="${r.id}">
-      <div class="gal" data-gal data-name="${r.name}" data-photos='${JSON.stringify(keys.map(k => `${root}assets/img/${k}-850.webp`))}'>
+      <div class="gal" data-gal data-name="${r.name}" data-photos='${JSON.stringify(keys.map(k => full(root, k)))}'>
         <div class="gal-stage">
           <button class="gal-main" type="button" aria-label="${esc(r.name)} – ${esc(t.unit.photo)}">${pic(root, keys[0], { alt: `${r.name} – ${t.unit.photo} 1`, sizes: '(min-width: 960px) 660px, 100vw' })}</button>
           <button class="gal-nav gal-prev" type="button" aria-label="${esc(t.btn.prev)}">${icon('left')}</button>
@@ -344,7 +347,7 @@ function request(lang) {
 
   const strings = {
     err: q.err, sum: q.sum, labels: f, unit: t.unit, subject: q.ok.subject, mail: CONTACT.mail,
-    rooms: Object.fromEntries(ROOMS.map(r => [r.id, { name: r.name, price: r.price, img: `${root}assets/img/${r.dir}/${r.photos[0]}-480.webp` }])),
+    rooms: Object.fromEntries(ROOMS.map(r => [r.id, { name: r.name, price: r.price, img: full(root, `${r.dir}/${r.photos[0]}`) }])),
     locale: { de: 'de-DE', en: 'en-GB', it: 'it-IT' }[lang],
   };
 
@@ -362,7 +365,7 @@ function request(lang) {
         <legend>${esc(f.room)}${req}</legend>
         <div class="room-opts">
           ${ROOMS.map(r => `<label class="room-opt"><input type="radio" name="room" value="${r.id}" required>
-            <img src="${root}assets/img/${r.dir}/${r.photos[0]}-480.webp" alt="" width="160" height="90" loading="lazy">
+            <img src="${small(root, `${r.dir}/${r.photos[0]}`)}" alt="" width="160" height="90" loading="lazy">
             <strong>${r.name}</strong><span>${r.price} € ${esc(t.unit.perNight)}</span></label>`).join('\n          ')}
         </div>
         <p class="hint" data-hint="room" aria-live="polite"></p>
@@ -405,7 +408,7 @@ function request(lang) {
     </div>
 
     <aside class="req-sum card" aria-label="${esc(q.sum.title)}">
-      <div class="sum-img"><img id="sum-img" src="${root}assets/img/galerie-01/01-das-ist-unser-brandlgut-480.webp" data-default="${root}assets/img/galerie-01/01-das-ist-unser-brandlgut-480.webp" alt="" width="480" height="270"></div>
+      <div class="sum-img"><img id="sum-img" src="${full(root, 'galerie-01/01-das-ist-unser-brandlgut')}" data-default="${full(root, 'galerie-01/01-das-ist-unser-brandlgut')}" alt="" width="850" height="478"></div>
       <div class="sum-body">
         <p class="eyebrow">${esc(q.sum.title)}</p>
         <p class="sum-room" id="sum-room">${esc(q.sum.empty)}</p>
@@ -439,7 +442,7 @@ ${p.blocks.map(([h2, paras], i) => `<section class="sec${i % 2 ? '' : ' sec-sand
 <section class="sec">
   <div class="wrap">
     <div class="sec-head"><h2>${esc(p.gallery)}</h2></div>
-    <div class="grid-gal" data-gal data-photos='${JSON.stringify(FARM_PHOTOS.map(k => `${root}assets/img/${k}-850.webp`))}' data-caps='${esc(JSON.stringify(p.captions))}'>
+    <div class="grid-gal" data-gal data-photos='${JSON.stringify(FARM_PHOTOS.map(k => full(root, k)))}' data-caps='${esc(JSON.stringify(p.captions))}'>
       ${FARM_PHOTOS.map((k, i) => `<button class="grid-gal-item" type="button" data-i="${i}">${pic(root, k, { alt: p.captions[i], sizes: '(min-width: 960px) 370px, 50vw' })}<span>${esc(p.captions[i])}</span></button>`).join('\n      ')}
     </div>
   </div>

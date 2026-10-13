@@ -24,7 +24,7 @@ Fonts (Fraunces, Figtree) are served from the site itself.
 | `src/images/original/` | Working copies of the photos, icons and logo. |
 | `backup/original-images/` | Untouched originals with their original names. Never written to. |
 | `build.mjs` | Generates `docs/` from the above. |
-| `scripts/images.mjs` | Converts the photos to WebP; colour-matches the room photos on the way. |
+| `scripts/images.mjs` | Prepares the photos: full size without re-compression, a small WebP for thumbnails; colour-matches the room photos on the way. |
 | `scripts/colour.mjs` | The colour matching: evens out mixed daylight / lamp light and brings all rooms to one white. |
 | `scripts/measure.js` | Browser helper that compares element sizes across the three languages. |
 | `scripts/sheet.mjs` | Makes contact sheets for comparing photos side by side. |
@@ -41,6 +41,9 @@ npm run build        # after changing copy, templates, CSS or JS
 
 - The photos are the photographer's finished work. The only processing is the colour matching of the room
   photos (mixed daylight / lamp light, one shared white) plus resizing and compression.
+- The sources are only 850px wide (that is all the old site has). On high-resolution screens such as an
+  iPad, large photos are therefore enlarged and look soft. The fix is higher-resolution originals, not
+  more processing.
 - No retouching of surfaces: an attempt to brighten and smooth the suite's walls looked unnatural and was
   reverted. Changes of that kind belong in the original files, not in the build.
 

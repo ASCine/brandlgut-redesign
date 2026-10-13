@@ -213,8 +213,8 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--w
 .split-img img { width: 100%; border-radius: var(--r-xl); box-shadow: var(--shadow); }
 /* Portrait photo: always shown whole, never cropped. It sits flush with the left content edge
    and the text follows right beside it, instead of both floating in two equal halves. */
-.split-portrait { grid-template-columns: 400px minmax(0, 1fr); gap: 80px; }
-.split-img-portrait { justify-self: start; width: 100%; max-width: 400px; }
+.split-portrait { grid-template-columns: 360px minmax(0, 1fr); gap: 80px; }
+.split-img-portrait { justify-self: start; width: 100%; max-width: 360px; }
 .split-portrait .split-txt { max-width: 640px; }
 .split-txt h2 { margin-bottom: 22px; }
 .split-txt p { color: var(--muted); }
@@ -412,7 +412,8 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--w
 .lb { width: 100vw; height: 100vh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: rgba(30, 26, 22, .94); color: #fff; }
 .lb::backdrop { background: rgba(30, 26, 22, .94); }
 .lb[open] { display: grid; place-items: center; }
-.lb-fig { width: min(92vw, 1100px); }
+/* Never shown larger than the photos really are (850px). */
+.lb-fig { width: min(92vw, 850px); }
 .lb-img { width: 100%; aspect-ratio: 850 / 478; object-fit: contain; border-radius: var(--r-sm); background: #1e1a16; }
 .lb-cap { height: 44px; line-height: 44px; text-align: center; font-size: .95rem; color: rgba(255, 255, 255, .85); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .lb-btn { position: fixed; z-index: 2; width: 52px; height: 52px; display: grid; place-items: center; background: rgba(255, 255, 255, .14); border: 0; border-radius: var(--r-sm); color: #fff; transition: background .2s; }
@@ -446,7 +447,7 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--w
 
 @media (max-width: 1099px) {
   .hero-img { object-position: 50% 100%; }
-  .split-portrait { grid-template-columns: 340px minmax(0, 1fr); gap: 56px; }
+  .split-portrait { grid-template-columns: 306px minmax(0, 1fr); gap: 56px; }
   .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .cards-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .chips { grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -510,6 +511,7 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--w
 
 @media (max-width: 599px) {
   body { font-size: 16px; }
+  .split-img-portrait { justify-self: center; max-width: 90%; }
   .hero { padding: 8px 8px 0; }
   .hero-img { aspect-ratio: 4 / 3; object-position: 32% 60%; }
   .hero-txt { align-items: stretch; }
