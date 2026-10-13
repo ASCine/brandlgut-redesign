@@ -190,7 +190,7 @@ function home(lang) {
 </section>
 
 <section class="sec">
-  <div class="wrap split">
+  <div class="wrap split split-portrait">
     <figure class="split-img split-img-portrait">${pic(root, 'diegassers_2018', { alt: h.welcome.alt, sizes: '(min-width: 960px) 400px, 100vw' })}</figure>
     <div class="split-txt">
       <p class="eyebrow">${esc(h.welcome.eyebrow)}</p>

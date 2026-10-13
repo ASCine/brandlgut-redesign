@@ -207,8 +207,11 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--w
 .split { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 72px; align-items: center; }
 .split-rev > :first-child { order: 2; }
 .split-img img { width: 100%; border-radius: var(--r-xl); box-shadow: var(--shadow); }
-/* Portrait photo: always shown whole, never cropped. */
-.split-img-portrait { justify-self: center; width: 100%; max-width: 400px; }
+/* Portrait photo: always shown whole, never cropped. It sits flush with the left content edge
+   and the text follows right beside it, instead of both floating in two equal halves. */
+.split-portrait { grid-template-columns: 400px minmax(0, 1fr); gap: 80px; }
+.split-img-portrait { justify-self: start; width: 100%; max-width: 400px; }
+.split-portrait .split-txt { max-width: 640px; }
 .split-txt h2 { margin-bottom: 22px; }
 .split-txt p { color: var(--muted); }
 .split-txt .btn { margin-top: 14px; }
@@ -439,6 +442,7 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--w
 
 @media (max-width: 1099px) {
   .hero-img { object-position: 50% 100%; }
+  .split-portrait { grid-template-columns: 340px minmax(0, 1fr); gap: 56px; }
   .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .cards-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .chips { grid-template-columns: repeat(3, minmax(0, 1fr)); }
