@@ -128,7 +128,6 @@ button { cursor: pointer; }
 }
 .nav-a:hover { background: var(--sand); }
 .nav-a.is-active { color: var(--wine); background: var(--sand); }
-.nav-cta { display: none; }
 .lang { display: flex; gap: 4px; flex: none; margin-left: 16px; padding: 4px; background: var(--sand); border-radius: 999px; }
 .lang-a {
   width: 38px; height: 36px; line-height: 36px; text-align: center;
@@ -139,7 +138,6 @@ button { cursor: pointer; }
 .hdr-cta { margin-left: 16px; }
 /* On the request page itself the header button would only point back to the same page. */
 .page-request .hdr-cta { visibility: hidden; }
-.page-request .nav-cta { display: none !important; }
 .burger { display: none; }
 
 /* ---------- Sections ---------- */
@@ -426,7 +424,6 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--w
   }
   .nav.is-open { display: flex; }
   .nav-a { width: 100%; height: 52px; line-height: 52px; text-align: left; padding: 0 18px; font-size: 1.05rem; }
-  .nav-cta { display: inline-flex; width: 100%; margin-top: 8px; }
   .lang { margin-left: auto; }
   .burger {
     display: grid; place-items: center; width: 48px; height: 48px; margin-left: 12px; flex: none;
@@ -460,7 +457,6 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--w
   .sec { padding: 64px 0; }
   .sec-tight { padding: 28px 0 64px; }
   .sec-facts { padding: 24px 0 0; }
-  .hdr-cta { display: none; }
   /* Narrow screens: the photo is shown on its own and the text follows below it. */
   .hero { padding: 12px 12px 0; }
   .hero-panel { height: auto; overflow: visible; background: none; border-radius: 0; }
@@ -482,6 +478,11 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--w
   .sec-foot { flex-direction: column; align-items: flex-start; }
   .sec-foot-center { align-items: center; }
   .prose { padding: 28px 22px; }
+}
+
+/* Phones: no room for the header button next to logo, language switch and menu. */
+@media (max-width: 639px) {
+  .hdr-cta { display: none; }
 }
 
 @media (max-width: 599px) {

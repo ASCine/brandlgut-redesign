@@ -92,7 +92,6 @@ ${alternates}
     </a>
     <nav class="nav" id="nav" aria-label="${esc(t.btn.menu)}">
       ${navLinks}
-      ${btn(u('request'), t.btn.request, 'nav-cta')}
     </nav>
     <div class="lang">${langLinks}</div>
     ${btn(u('request'), t.btn.request, 'btn-sm hdr-cta')}
