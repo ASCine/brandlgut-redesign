@@ -11,6 +11,9 @@ const SRC = 'src/images/original';
 const OUT = 'docs/assets/img';
 // The home page hero is shown very large and gets an extra, carefully sharpened 1600px version.
 const HERO = new Set(['galerie-01/01-das-ist-unser-brandlgut']);
+// The suite is in the old part of the house: its shaded white walls looked grey and blotchy ("dirty"),
+// so these photos also get the wall clean-up (see colour.mjs).
+const CLEAN_WHITES = { prefix: 'rooms/deluxe/', options: { lift: 0.55, tint: 0.65, smooth: 0.85 } };
 // Room photos taken outdoors: nothing to match there.
 const NO_MATCH = new Set(['rooms/superior-plus/03_superiorplus_terrasse']);
 
@@ -35,7 +38,7 @@ for (const rel of (await walk(SRC)).sort()) {
 
   let source = () => sharp(join(SRC, rel));
   if (key.startsWith('rooms/') && !NO_MATCH.has(key)) {
-    const res = await matchRoomColours(join(SRC, rel));
+    const res = await matchRoomColours(join(SRC, rel), key.startsWith(CLEAN_WHITES.prefix) ? { cleanWhites: CLEAN_WHITES.options } : {});
     if (!res.stats.skipped) { const png = await toSharp(res).png().toBuffer(); source = () => sharp(png); matched++; }
   }
   const { width, height } = await sharp(join(SRC, rel)).metadata();
