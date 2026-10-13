@@ -1,16 +1,16 @@
-// Static site generator for the Brandlgut redesign. No dependencies: `node build.mjs` writes docs/.
+// Static site generator for the Brandlgut redesign. No framework, no dependencies:
+// `node build.mjs` turns src/ into plain HTML, CSS and JS in docs/.
 // Run `node scripts/images.mjs` first whenever photos in src/images/original change.
 import { readFile, writeFile, mkdir, copyFile } from 'node:fs/promises';
 import { join } from 'node:path';
-import { LANGS, SLUGS, CONTACT, ROOMS, FARM_PHOTOS, POLICY_ICONS, T, EN_FIXES } from './src/content.mjs';
+import { LANGS, SLUGS, CONTACT, ROOMS, FARM_PHOTOS, POLICY_ICONS, T } from './src/content.mjs';
 
 const OUT = 'docs';
 const manifest = JSON.parse(await readFile('src/images/manifest.json', 'utf8'));
-const generated = JSON.parse(await readFile('src/content/generated.json', 'utf8'));
+const longTexts = JSON.parse(await readFile('src/content/long-texts.json', 'utf8'));
 const YEAR = 2026;
 
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-const fixEn = (lang, s) => lang === 'en' ? EN_FIXES.reduce((a, [x, y]) => a.split(x).join(y), s) : s;
 const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
 
 // ---------- helpers ----------
@@ -23,8 +23,7 @@ function pic(root, key, { alt = '', sizes = '100vw', cls = '', eager = false } =
   if (!m) throw new Error('missing image ' + key);
   const base = `${root}assets/img/${key}`;
   const srcset = m.widths.map(w => `${base}-${w}.webp ${w}w`).join(', ');
-  const main = Math.min(...m.widths.filter(w => w >= m.w));
-  return `<img${cls ? ` class="${cls}"` : ''} src="${base}-${main}.webp" srcset="${srcset}" sizes="${sizes}" width="${m.w}" height="${m.h}" alt="${esc(alt)}"${eager ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async">`;
+  return `<img${cls ? ` class="${cls}"` : ''} src="${base}-${m.w}.webp" srcset="${srcset}" sizes="${sizes}" width="${m.w}" height="${m.h}" alt="${esc(alt)}"${eager ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async">`;
 }
 
 const ICONS = {
@@ -40,9 +39,12 @@ const ICONS = {
   left: '<path d="m14.5 6-6 6 6 6"/>',
   right: '<path d="m9.5 6 6 6-6 6"/>',
   x: '<path d="m6 6 12 12M18 6 6 18"/>',
-  users: '<circle cx="9" cy="8.5" r="3.2"/><path d="M3 19.5c.6-3.3 2.9-5 6-5s5.4 1.7 6 5"/><path d="M16 5.6a3.2 3.2 0 0 1 0 5.8M18 14.9c1.6.7 2.6 2.300 3 4.600"/>',
-  size: '<path d="M4 9V4h5M20 15v5h-5M4 4l6.500 6.500M20 20l-6.500-6.500"/>',
-  cancel: '<rect x="3.5" y="5.500" width="17" height="15" rx="2.500"/><path d="M3.500 10h17M8 3.500v4M16 3.500v4m-6.500 6 5 5m0-5-5 5"/>',
+  // House rules
+  euro: '<circle cx="12" cy="12" r="9.2"/><path d="M15.4 8.5a4.5 4.5 0 1 0 0 7M7 10.8h6M7 13.2h6"/>',
+  key: '<circle cx="8" cy="15.6" r="4.4"/><path d="m11.2 12.4 8.3-8.3M16.4 7.200l2.600 2.600M13.600 10l2.200 2.200"/>',
+  nosmoke: '<circle cx="12" cy="12" r="9.2"/><path d="M5.900 10.900h8.600v2.800H5.900zM16.400 10.900v2.800M18.300 10.900v2.800"/><path d="m5.500 5.500 13 13"/>',
+  cancel: '<rect x="3.6" y="5" width="16.8" height="15.4" rx="2.6"/><path d="M3.600 10h16.800M8 3v4M16 3v4M9.700 12.900l4.600 4.600m0-4.600-4.600 4.600"/>',
+  towel: '<path d="M10 3.200l1.700 4.600 4.600 1.700-4.600 1.700L10 15.800l-1.700-4.600-4.600-1.700 4.600-1.700L10 3.200Z"/><path d="M17.500 14l.9 2.300 2.300.9-2.300.9-.9 2.300-.9-2.300-2.300-.9 2.300-.9.900-2.300Z"/>',
 };
 const icon = (name, cls = 'ic') => `<svg class="${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[name]}</svg>`;
 
@@ -50,7 +52,9 @@ const btn = (href, label, cls = '') => `<a class="btn${cls ? ' ' + cls : ''}" hr
 
 // ---------- shared layout ----------
 
-function layout({ lang, key, title, desc, body, extraScript = '' }) {
+// `band` adds the closing "send a request" band. It is left out where the page already
+// offers that step itself (rooms, request form) and on the legal pages.
+function layout({ lang, key, title, desc, body, band = false, extraScript = '' }) {
   const t = T[lang];
   const root = rootOf(key);
   const u = k => url(root, lang, k);
@@ -58,7 +62,6 @@ function layout({ lang, key, title, desc, body, extraScript = '' }) {
     .map(([k, href]) => `<a class="nav-a${k === key ? ' is-active' : ''}" href="${href}">${esc(t.nav[k])}</a>`).join('');
   const langLinks = LANGS.map(l => `<a class="lang-a${l === lang ? ' is-active' : ''}" href="${url(root, l, key)}" hreflang="${l}" lang="${l}" title="${T[l].langName}"${l === lang ? ' aria-current="true"' : ''}>${l.toUpperCase()}</a>`).join('');
   const alternates = LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="${url(root, l, key)}">`).join('\n');
-  const c = t.contact;
 
   return `<!doctype html>
 <html lang="${t.htmlLang}">
@@ -79,7 +82,7 @@ ${alternates}
 <link rel="stylesheet" href="${root}assets/styles.css">
 </head>
 <body class="page-${key}">
-<a class="skip" href="#main">${{ de: 'Zum Inhalt', en: 'Skip to content', it: 'Vai al contenuto' }[lang]}</a>
+<a class="skip" href="#main">${esc(t.skip)}</a>
 
 <header class="hdr">
   <div class="wrap hdr-in">
@@ -99,60 +102,36 @@ ${alternates}
 
 <main id="main">
 ${body}
-
-<section class="sec sec-contact" id="kontakt">
-  <div class="wrap contact">
-    <div class="contact-txt">
-      <p class="eyebrow">${esc(c.eyebrow)}</p>
-      <h2>${esc(c.h2)}</h2>
-      <address>${c.address.map(esc).join('<br>')}</address>
-      <dl class="contact-rows">
-        ${c.rows.map(([label, v]) => `<dt>${esc(label)}</dt><dd>${v === 'phone' ? `<a href="${CONTACT.phoneHref}">${CONTACT.phone}</a>` : v === 'mail' ? `<a href="mailto:${CONTACT.mail}">${CONTACT.mail}</a>` : esc(v)}</dd>`).join('\n        ')}
-      </dl>
-    </div>
-    <div class="map">
-      ${pic(root, 'galerie-01/02-das-brandlgut-am-abend', { alt: '', sizes: '(min-width: 960px) 620px, 100vw', cls: 'map-img' })}
-      <div class="map-card">
-        <span class="map-pin">${icon('pin')}</span>
-        <strong>${esc(c.address[1])}</strong>
-        <span>${esc(c.address[2])}</span>
-        <a class="btn" href="${CONTACT.maps}" target="_blank" rel="noopener">${esc(t.btn.route)}</a>
-        <small>${esc(c.mapNote)}</small>
-      </div>
-    </div>
-  </div>
-</section>
-
+${band ? `
 <section class="cta">
   <div class="wrap cta-in">
     <h2>${esc(t.cta.h2)}</h2>
     <p>${esc(t.cta.p)}</p>
-    <div class="btn-row btn-row-center">
-      ${btn(u('request'), t.btn.request, 'btn-light')}
-      <a class="btn btn-outline-light" href="${CONTACT.phoneHref}">${esc(CONTACT.phone)}</a>
-    </div>
+    ${btn(u('request'), t.btn.request, 'btn-light')}
   </div>
-</section>
+</section>` : ''}
 </main>
 
-<footer class="ftr">
+<footer class="ftr" id="kontakt">
   <div class="wrap ftr-in">
-    <a class="brand" href="${u('home')}" aria-label="Brandlgut">
-      <img class="brand-mark" src="${root}assets/img/logo-mark.svg" alt="" width="48" height="48" loading="lazy">
-      <img class="brand-word" src="${root}assets/img/logo-word.svg" alt="Brandlgut" width="138" height="38" loading="lazy">
-    </a>
-    <p class="ftr-copy">© ${YEAR} Brandlgut · ${esc(t.footer.family)}</p>
+    <div class="ftr-brand">
+      <a class="brand" href="${u('home')}" aria-label="Brandlgut">
+        <img class="brand-mark" src="${root}assets/img/logo-mark.svg" alt="" width="48" height="48" loading="lazy">
+        <img class="brand-word" src="${root}assets/img/logo-word.svg" alt="Brandlgut" width="138" height="38" loading="lazy">
+      </a>
+      <p class="ftr-copy">© ${YEAR} Brandlgut · ${esc(t.footer.family)}</p>
+    </div>
+    <ul class="ftr-contact">
+      <li>${icon('phone')}<a href="${CONTACT.phoneHref}">${CONTACT.phone}</a></li>
+      <li>${icon('mail')}<a href="mailto:${CONTACT.mail}">${CONTACT.mail}</a></li>
+    </ul>
     <nav class="ftr-nav">
+      <a href="${u('home')}#anreise">${esc(t.home.loc.eyebrow)}</a>
       <a href="${u('imprint')}">${esc(t.footer.imprint)}</a>
       <a href="${u('privacy')}">${esc(t.footer.privacy)}</a>
     </nav>
   </div>
 </footer>
-
-<div class="mbar">
-  <a class="mbar-a" href="${CONTACT.phoneHref}">${icon('phone')}<span>${esc(t.btn.call)}</span></a>
-  <a class="mbar-a mbar-primary" href="${u('request')}">${icon('mail')}<span>${esc(t.btn.request)}</span></a>
-</div>
 
 <dialog class="lb" aria-label="${esc(t.unit.photo)}">
   <button class="lb-btn lb-close" type="button" aria-label="${esc(t.btn.close)}">${icon('x')}</button>
@@ -181,45 +160,25 @@ function pageHead({ root, eyebrow, h1, intro, note, img, alt }) {
 </section>`;
 }
 
-const roomMeta = (t, r) => `${r.extra ? '2 (+2)' : '2'} ${t.unit.guests} · ca. ${r.size} m²`;
-
 // ---------- pages ----------
 
 function home(lang) {
   const t = T[lang], h = t.home, root = rootOf('home');
   const u = k => url(root, lang, k);
-  const minPrice = Math.min(...ROOMS.map(r => r.price));
   const factIcons = ['pin', 'grape', 'cup', 'car'];
-  const cats = generated[lang].activities;
+  const cats = longTexts[lang].activities;
 
   const body = `<section class="hero">
-  <div class="wrap hero-in">
+  <div class="hero-panel">
+    ${pic(root, 'galerie-01/01-das-ist-unser-brandlgut', { alt: h.heroAlt, sizes: '(min-width: 1400px) 1368px, 100vw', cls: 'hero-img', eager: true })}
     <div class="hero-txt">
-      <p class="eyebrow">${esc(h.eyebrow)}</p>
-      <h1>${h.h1.map(esc).join('<br>')}</h1>
-      <p class="lead">${esc(h.lead)}</p>
-      <div class="btn-row">
-        ${btn(u('request'), t.btn.request)}
-        ${btn(u('rooms'), t.btn.viewRooms, 'btn-ghost')}
+      <div class="hero-copy">
+        <p class="eyebrow">${esc(h.eyebrow)}</p>
+        <h1>${esc(h.h1[0])} <br class="br-m">${esc(h.h1[1])}</h1>
+        <p class="lead">${esc(h.lead)}</p>
       </div>
+      ${btn(u('rooms'), t.btn.viewRooms, 'btn-light')}
     </div>
-    <div class="hero-img">
-      ${pic(root, 'galerie-01/01-das-ist-unser-brandlgut', { alt: h.heroAlt, sizes: '(min-width: 960px) 640px, 100vw', eager: true })}
-      <div class="hero-badge"><span>${esc(h.badge)} ${esc(t.unit.from)}</span><strong>${minPrice} €</strong><span>${esc(t.unit.perNight)}</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="quick-sec">
-  <div class="wrap">
-    <form class="quick" action="${u('request')}" method="get">
-      <label class="quick-f"><span>${esc(h.quick.arrival)}</span><input type="date" name="arrival"></label>
-      <label class="quick-f"><span>${esc(h.quick.departure)}</span><input type="date" name="departure"></label>
-      <label class="quick-f"><span>${esc(h.quick.room)}</span>
-        <select name="room"><option value="">${esc(h.quick.any)}</option>${ROOMS.map(r => `<option value="${r.id}">${r.name}</option>`).join('')}</select>
-      </label>
-      <button class="btn" type="submit">${esc(t.btn.requestNow)}</button>
-    </form>
   </div>
 </section>
 
@@ -233,11 +192,11 @@ function home(lang) {
 
 <section class="sec">
   <div class="wrap split">
-    <figure class="split-img split-img-portrait">${pic(root, 'diegassers_2018', { alt: h.welcome.alt, sizes: '(min-width: 960px) 440px, 100vw' })}</figure>
+    <figure class="split-img split-img-portrait">${pic(root, 'diegassers_2018', { alt: h.welcome.alt, sizes: '(min-width: 960px) 400px, 100vw' })}</figure>
     <div class="split-txt">
       <p class="eyebrow">${esc(h.welcome.eyebrow)}</p>
       <h2>${esc(h.welcome.h2)}</h2>
-      ${h.welcome.p.map(p => `<p>${esc(p)}</p>`).join('\n      ')}
+      <p>${esc(h.welcome.p)}</p>
       <p class="sign">${h.welcome.sign.map(esc).join('<br>')}</p>
     </div>
   </div>
@@ -248,15 +207,14 @@ function home(lang) {
     <div class="sec-head">
       <p class="eyebrow">${esc(h.rooms.eyebrow)}</p>
       <h2>${esc(h.rooms.h2)}</h2>
-      <p>${esc(h.rooms.p)}</p>
     </div>
     <div class="cards cards-4">
       ${ROOMS.map(r => `<a class="card room-card" href="${u('rooms')}#${r.id}">
         ${pic(root, `${r.dir}/${r.photos[0]}`, { alt: `${r.name} – ${t.unit.photo} 1`, sizes: '(min-width: 960px) 270px, (min-width: 600px) 50vw, 100vw' })}
         <div class="card-body">
           <h3>${r.name}</h3>
-          <p class="card-meta">${esc(roomMeta(t, r))}</p>
-          <ul class="ticks">${t.features[r.id].slice(0, 2).map(f => `<li>${icon('check')}<span>${esc(f)}</span></li>`).join('')}</ul>
+          <p class="card-meta">${esc(`${r.guests} ${t.unit.guests} · ca. ${r.size} m²`)}</p>
+          <ul class="ticks">${t.homeTicks[r.id].map(f => `<li>${icon('check')}<span>${esc(f)}</span></li>`).join('')}</ul>
           <p class="price"><strong>${r.price} €</strong><span>${esc(t.unit.perNight)}</span></p>
         </div>
       </a>`).join('\n      ')}
@@ -278,7 +236,7 @@ function home(lang) {
     <div class="split-txt">
       <p class="eyebrow">${esc(h.farm.eyebrow)}</p>
       <h2>${esc(h.farm.h2)}</h2>
-      ${h.farm.p.map(p => `<p>${esc(p)}</p>`).join('\n      ')}
+      <p>${esc(h.farm.p)}</p>
       ${btn(u('farm'), t.btn.more, 'btn-outline')}
     </div>
   </div>
@@ -295,18 +253,31 @@ function home(lang) {
     </div>
     <div class="sec-foot sec-foot-center">${btn(u('activities'), t.btn.allTips, 'btn-outline')}</div>
   </div>
+</section>
+
+<section class="sec" id="anreise">
+  <div class="wrap loc">
+    <figure class="loc-img">${pic(root, 'galerie-01/02-das-brandlgut-am-abend', { alt: h.loc.alt, sizes: '(min-width: 960px) 660px, 100vw' })}</figure>
+    <div class="loc-txt">
+      <p class="eyebrow">${esc(h.loc.eyebrow)}</p>
+      <h2>${esc(h.loc.h2)}</h2>
+      <address>Brandlgut<br>${t.address.map(esc).join('<br>')}</address>
+      <a class="btn btn-outline" href="${CONTACT.maps}" target="_blank" rel="noopener">${esc(t.btn.route)}</a>
+    </div>
+  </div>
 </section>`;
-  return layout({ lang, key: 'home', title: h.title, desc: h.desc, body });
+  return layout({ lang, key: 'home', title: h.title, desc: h.desc, body, band: true });
 }
 
 function rooms(lang) {
   const t = T[lang], p = t.roomsPage, root = rootOf('rooms');
   const u = k => url(root, lang, k);
-  const pol = generated[lang].policies.map(s => fixEn(lang, s));
-  const policies = [...pol.slice(0, 7), pol.slice(7).join(' ')];
 
   const roomBlocks = ROOMS.map(r => {
     const keys = r.photos.map(n => `${r.dir}/${n}`);
+    const s = p.specs[r.id];
+    const rows = [[p.spec.guests, r.guests], [p.spec.size, `ca. ${r.size} m²`], [p.spec.outdoor, s.outdoor], [p.spec.bath, s.bath]];
+    if (s.kitchen) rows.push([p.spec.kitchen, s.kitchen]);
     const thumbs = keys.map((k, i) => `<button class="gal-th${i === 0 ? ' is-active' : ''}" type="button" data-i="${i}" aria-label="${esc(t.unit.photo)} ${i + 1}"><img src="${root}assets/img/${k}-480.webp" alt="" width="160" height="90" loading="lazy" decoding="async"></button>`).join('');
     return `<article class="room" id="${r.id}">
       <div class="gal" data-gal data-name="${r.name}" data-photos='${JSON.stringify(keys.map(k => `${root}assets/img/${k}-850.webp`))}'>
@@ -320,18 +291,18 @@ function rooms(lang) {
       </div>
       <div class="room-info">
         <h2>${r.name}</h2>
-        <ul class="tags">
-          <li>${icon('users')}<span>${esc(t.persons(r.extra ? '2 (+2)' : '2'))}</span></li>
-          <li>${icon('size')}<span>ca. ${r.size} m²</span></li>
-        </ul>
-        <ul class="ticks ticks-2">${t.features[r.id].map(f => `<li>${icon('check')}<span>${esc(f)}</span></li>`).join('')}</ul>
+        <dl class="spec">${rows.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl>
         <div class="room-buy">
-          <p class="price price-lg"><strong>${r.price} €</strong><span>${esc(t.unit.perNight)}</span><small>${esc(t.unit.exclBreakfast)}</small></p>
+          <p class="price price-lg"><strong>${r.price} €</strong><span>${esc(t.unit.perNight)}</span></p>
           ${btn(`${u('request')}?room=${r.id}`, t.btn.requestRoom)}
         </div>
       </div>
     </article>`;
   }).join('\n    ');
+
+  const policyIcon = name => name.startsWith('file:')
+    ? `<img src="${root}assets/img/${name.slice(5)}.svg" alt="" width="30" height="30" loading="lazy">`
+    : icon(name);
 
   const body = `${pageHead({ root, eyebrow: p.eyebrow, h1: p.h1, intro: p.intro, img: 'rooms/standard/02_standard_zimmer', alt: 'Standard' })}
 
@@ -345,14 +316,14 @@ function rooms(lang) {
   <div class="wrap">
     <div class="sec-head"><h2>${esc(p.good)}</h2></div>
     <ul class="policies">
-      ${policies.map((txt, i) => `<li class="policy">
-        <span class="policy-ic">${POLICY_ICONS[i] === 'cancel' ? icon('cancel') : `<img src="${root}assets/img/${POLICY_ICONS[i]}.svg" alt="" width="30" height="30" loading="lazy">`}</span>
-        <div><h3>${esc(p.policyTitles[i])}</h3><p>${esc(txt)}</p></div>
+      ${p.policies.map(([title, txt], i) => `<li class="policy">
+        <span class="policy-ic">${policyIcon(POLICY_ICONS[i])}</span>
+        <div><h3>${esc(title)}</h3><p>${esc(txt)}</p></div>
       </li>`).join('\n      ')}
     </ul>
   </div>
 </section>`;
-  return layout({ lang, key: 'rooms', title: p.title, desc: p.intro.slice(0, 155), body });
+  return layout({ lang, key: 'rooms', title: p.title, desc: p.intro, body });
 }
 
 function request(lang) {
@@ -437,36 +408,28 @@ function request(lang) {
         </dl>
         <p class="sum-note">${esc(q.sum.note)}</p>
         <p class="sum-min" id="sum-min">${icon('clock')}<span>${esc(q.sum.minStay)}</span></p>
-        <ul class="sum-contact">
-          <li>${icon('phone')}<a href="${CONTACT.phoneHref}">${CONTACT.phone}</a></li>
-          <li>${icon('mail')}<a href="mailto:${CONTACT.mail}">${CONTACT.mail}</a></li>
-        </ul>
       </div>
     </aside>
   </div>
 </section>`;
   const extraScript = `<script type="application/json" id="req-i18n">${JSON.stringify(strings).replace(/</g, '\\u003c')}</script>`;
-  return layout({ lang, key: 'request', title: q.title, desc: q.intro.slice(0, 155), body, extraScript });
+  return layout({ lang, key: 'request', title: q.title, desc: q.intro, body, extraScript });
 }
 
 function farm(lang) {
   const t = T[lang], p = t.farmPage, root = rootOf('farm');
-  const u = k => url(root, lang, k);
-  const txt = generated[lang].farm.map(s => fixEn(lang, s));
-  const split = (imgs, paras, rev) => `<section class="sec${rev ? ' sec-sand' : ''}">
-  <div class="wrap split${rev ? ' split-rev' : ''}">
-    <figure class="split-img">${pic(root, imgs[0], { alt: imgs[1], sizes: '(min-width: 960px) 540px, 100vw' })}</figure>
-    <div class="split-txt">${paras.map(s => `<p>${esc(s)}</p>`).join('')}</div>
+  const photos = [[FARM_PHOTOS[12], p.captions[12]], [FARM_PHOTOS[6], p.captions[6]], [FARM_PHOTOS[3], p.captions[3]]];
+
+  const body = `${pageHead({ root, eyebrow: p.eyebrow, h1: p.h1, intro: p.intro, img: FARM_PHOTOS[0], alt: p.captions[0] })}
+
+${p.blocks.map(([h2, paras], i) => `<section class="sec${i % 2 ? '' : ' sec-sand'}">
+  <div class="wrap split${i % 2 ? ' split-rev' : ''}">
+    <figure class="split-img">${pic(root, photos[i][0], { alt: photos[i][1], sizes: '(min-width: 960px) 540px, 100vw' })}</figure>
+    <div class="split-txt"><h2>${esc(h2)}</h2>${paras.map(s => `<p>${esc(s)}</p>`).join('')}</div>
   </div>
-</section>`;
+</section>`).join('\n')}
 
-  const body = `${pageHead({ root, eyebrow: p.eyebrow, h1: p.h1, intro: txt[0], img: FARM_PHOTOS[0], alt: p.captions[0] })}
-
-${split([FARM_PHOTOS[12], p.captions[12]], [txt[1]], false)}
-${split([FARM_PHOTOS[6], p.captions[6]], [txt[2]], true)}
-${split([FARM_PHOTOS[3], p.captions[3]], [txt[3], txt[4]], false)}
-
-<section class="sec sec-sand">
+<section class="sec">
   <div class="wrap">
     <div class="sec-head"><h2>${esc(p.gallery)}</h2></div>
     <div class="grid-gal" data-gal data-photos='${JSON.stringify(FARM_PHOTOS.map(k => `${root}assets/img/${k}-850.webp`))}' data-caps='${esc(JSON.stringify(p.captions))}'>
@@ -474,23 +437,23 @@ ${split([FARM_PHOTOS[3], p.captions[3]], [txt[3], txt[4]], false)}
     </div>
   </div>
 </section>`;
-  return layout({ lang, key: 'farm', title: p.title, desc: txt[0].slice(0, 155), body });
+  return layout({ lang, key: 'farm', title: p.title, desc: p.intro, body, band: true });
 }
 
 function activities(lang) {
   const t = T[lang], p = t.actPage, root = rootOf('activities');
-  const g = generated[lang];
-  const body = `${pageHead({ root, eyebrow: p.eyebrow, h1: p.h1, intro: g.actIntro[0], note: p.note, img: 'galerie-01/05-entspannen-sie-auf-der-unteren-sonnenterrasse', alt: '' })}
+  const cats = longTexts[lang].activities;
+  const body = `${pageHead({ root, eyebrow: p.eyebrow, h1: p.h1, intro: p.intro, note: p.note, img: 'galerie-01/05-entspannen-sie-auf-der-unteren-sonnenterrasse', alt: '' })}
 
 <section class="sec sec-tight">
   <div class="wrap">
     <div class="chips">
-      ${g.activities.map((c, i) => `<a class="chip" href="#${c.id}">${pic(root, `activities/${c.id}`, { alt: '', sizes: '96px' })}<span>${esc(t.cats[i])}</span></a>`).join('\n      ')}
+      ${cats.map((c, i) => `<a class="chip" href="#${c.id}">${pic(root, `activities/${c.id}`, { alt: '', sizes: '96px' })}<span>${esc(t.cats[i])}</span></a>`).join('\n      ')}
     </div>
   </div>
 </section>
 
-${g.activities.map((c, i) => `<section class="sec sec-act${i % 2 ? '' : ' sec-sand'}" id="${c.id}">
+${cats.map((c, i) => `<section class="sec sec-act${i % 2 ? '' : ' sec-sand'}" id="${c.id}">
   <div class="wrap">
     <div class="act-head">${pic(root, `activities/${c.id}`, { alt: '', sizes: '72px' })}<h2>${esc(t.cats[i])}</h2></div>
     <ul class="tips">
@@ -498,7 +461,7 @@ ${g.activities.map((c, i) => `<section class="sec sec-act${i % 2 ? '' : ' sec-sa
     </ul>
   </div>
 </section>`).join('\n\n')}`;
-  return layout({ lang, key: 'activities', title: p.title, desc: g.actIntro[0].slice(0, 155), body });
+  return layout({ lang, key: 'activities', title: p.title, desc: p.intro, body, band: true });
 }
 
 function legal(lang, key) {
@@ -506,7 +469,7 @@ function legal(lang, key) {
   const h1 = key === 'imprint' ? t.legal.imprintTitle : t.legal.privacyTitle;
   const body = `${pageHead({ root, eyebrow: 'Brandlgut', h1 })}
 <section class="sec sec-tight">
-  <div class="wrap"><div class="prose card">${generated[lang][key]}</div></div>
+  <div class="wrap"><div class="prose card">${longTexts[lang][key]}</div></div>
 </section>`;
   return layout({ lang, key, title: `${h1} – Brandlgut`, desc: h1, body });
 }

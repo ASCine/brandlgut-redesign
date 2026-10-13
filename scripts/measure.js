@@ -5,8 +5,8 @@ window.measure = async function (width, keys) {
     request: ['de/anfrage/', 'en/request/', 'it/richiesta/'], farm: ['de/hof/', 'en/farm/', 'it/maso/'],
     activities: ['de/aktivitaeten/', 'en/activities/', 'it/attivita/'], imprint: ['de/impressum/', 'en/legal-notice/', 'it/note-legali/'],
   };
-  const FIXED = '.btn,.nav-a,.lang-a,.brand,.burger,.eyebrow,.hero h1,.hero .lead,.hero-badge,.hero-img,.quick,.quick-f,.fact,.fact strong,.room-card,.card-body h3,.card-meta,.ticks li,.price,.chip,.map-card,.ftr-nav a,.mbar-a,.phead-img,.room,.gal-stage,.room-info h2,.tags,.room-buy,.policy h3,.field > label,.field > legend,.field input,.field select,.field textarea,.hint,.room-opt,.req-sum,.sum-room,.sum-rows dt,.sum-rows dd,.sum-note,.sum-min,.grid-gal-item,.grid-gal-item span,.act-head,.cta-in';
-  const NOWRAP = '.btn,.nav-a,.eyebrow,.fact strong,.fact span,.card-body h3,.card-meta,.ticks li,.price,.chip span,.hero-badge,.quick-f span,.room-info h2,.tags li,.field > label,.field > legend,.room-opt span,.room-opt strong,.sum-room,.sum-rows dt,.sum-rows dd,.sum-note,.sum-min,.grid-gal-item span,.ftr-nav a,.ftr-copy,.mbar-a,.contact-rows dd,.req-form h2,.lang-a';
+  const FIXED = '.btn,.nav-a,.lang-a,.brand,.burger,.eyebrow,.hero-panel,.hero-txt,.hero h1,.hero .lead,.fact,.fact strong,.room-card,.card-body h3,.card-meta,.ticks li,.price,.chip,.loc-img,.loc-txt,.cta-in,.ftr-in,.ftr-contact li,.ftr-nav a,.phead-img,.room,.gal-stage,.room-info h2,.spec dt,.spec dd,.room-buy,.policy h3,.field > label,.field > legend,.field input,.field select,.field textarea,.hint,.room-opt,.req-sum,.sum-room,.sum-rows dt,.sum-rows dd,.sum-note,.sum-min,.grid-gal-item,.grid-gal-item span,.act-head,.split-txt h2';
+  const NOWRAP = '.btn,.nav-a,.eyebrow,.fact strong,.fact span,.card-body h3,.card-meta,.ticks li,.price,.chip span,.room-info h2,.spec dt,.spec dd,.field > label,.field > legend,.room-opt span,.room-opt strong,.sum-room,.sum-rows dt,.sum-rows dd,.sum-note,.sum-min,.grid-gal-item span,.ftr-nav a,.ftr-copy,.ftr-contact li,.req-form h2,.lang-a';
   const out = {};
   for (const key of keys || Object.keys(PAGES)) {
     const data = [];
