@@ -1,0 +1,1031 @@
+{
+ "de": {
+  "farm": [
+   "Der Brandlgut-Hof wurde Ende des 19. Jahrhunderts erbaut und im Jahre 2006 von uns übernommen. Seit Juli 2016 begrüßen wir nach mehrjähriger Umbau- und Modernisierungsphase ganzjährig eine Vielzahl an Gästen in unseren neu- und selbstgestalteten Gästezimmern.",
+   "Unser Hof ist ein zwei Hektar großes Weingut in bester Lage und mit optimalen Voraussetzungen für den Anbau der Rotweinsorte „Lagrein“. Ein kleinerer Teil unseres Hofes ist dem Anbau ausgewählter Obst- (Äpfel, Birnen, Kirschen etc.) und Gemüsesorten (Gurken, Kürbisse etc.) vorbehalten und dient sowohl der Verköstigung unserer Gäste als auch unserer Selbstversorgung. Die hofeigenen Eier servieren wir Ihnen jeden Morgen frisch zum Frühstück.",
+   "Wir legen viel Wert auf die persönliche Betreuung und pflegen einen offenen Umgang mit unseren Gästen. Am besten gelingt uns das bei einem morgendlichen Kaffee, frischen Brötchen und lokalen Köstlichkeiten in unserem komplett aus Fichtenholz gebauten Frühstücksraum.",
+   "Um vom Alltag zu entspannen, steht Ihnen unsere große Gemeinschaftsterrasse und Liegewiese mit einem fantastischen Blick auf das Tal zur Verfügung. Bei unseren kleinen Gästen punkten wir sicherlich mit sehr viel Platz zum Toben, einer kleinen Spielecke mit Sandkasten sowie einer großen Schaukel. Sollten Sie Freude am Spielen mit Hunden haben, werden Sie Mira lieben.",
+   "Wollen Sie mehr über die Arbeit als Winzer erfahren? Wir geben Ihnen gerne eine kleine Führung – sprechen Sie uns einfach an."
+  ],
+  "policies": [
+   "Unsere Preise verstehen sich pro Nacht und Zimmer, ab einem Mindestaufenthalt von drei Nächten. Das Frühstück ist nicht im Übernachtungspreis enthalten. Für 18 € pro Tag und Person können Sie unser Frühstück täglich von 8:00 - 10:00 Uhr genießen.",
+   "Wir freuen uns auf Ihre Anreise zwischen 17:00 und 20:00 Uhr. Bitte beachten Sie, dass wir für einen unangekündigten Check-in nach 20:00 Uhr einen Zuschlag von 20 €/Std. erheben, nach 22:00 Uhr ist leider kein Einlass mehr möglich. Unsere Check-out-Zeiten sind von 9:00 bis 10:30 Uhr.",
+   "Ihre kleinen Familienmitglieder: Bis zu einem Alter von drei Jahren sind Ihre Kinder kostenfrei, die vier-, fünf- und sechsjährigen genießen ihren Aufenthalt bei nur 15 €/Nacht. Alle Kinder von vier bis neun Jahren erhalten beim Frühstück einen Rabatt von 4 €/Tag, Kleinkinder bleiben kostenfrei.",
+   "Einen Kfz-Stellplatz halten wir selbstverständlich für Sie bereit. Sie wollen mit einem größeren Fahrzeug anreisen? Bitte teilen Sie uns dies vorab mit, damit wir einen passenden Stellplatz reservieren können. Für einen Anhänger berechnen wir eine Parkgebühr von 3 €/Tag.",
+   "Im Haus und auf den Zimmern herrscht absolutes Rauchverbot. Nutzen Sie doch bitte Ihren Balkon oder die Terrasse und genießen Sie dabei zugleich den Ausblick auf die wunderschöne Umgebung.",
+   "Leider müssen Ihre Haustiere zuhause bleiben – wir halten auf unserem Hof freilaufende Hühner und besitzen Hunde, Katzen und andere Kleintiere, die fremde Tiere nicht gewohnt sind.",
+   "Bei Stornierungen 14 Tage vor Anreise, Nicht-Anreise oder frühzeitiger Abreise werden 100 % des Komplettpreises in Rechnung gestellt.",
+   "Reinigung: Am Sonntag werden die Zimmer nur auf Anfrage gereinigt.",
+   "Handtücher werden alle 3 Tage gewechselt. Bei einem vorzeitigen bzw. täglichen Wechsel wird ein Aufpreis verlangt."
+  ],
+  "actIntro": [
+   "So erholsam und entspannt Ihr Urlaub auf unserem Brandlgut auch sein wird, Sie werden sich sicherlich nicht die Kunst und Kultur, die sportlichen Möglichkeiten oder die kulinarischen Highlights Bozens und Südtirols entgehen lassen wollen.",
+   "Tippen oder klicken Sie auf die Bilder – dort haben wir wertvolle Tipps für Sie zusammengetragen. Bitte erkundigen Sie sich gegebenenfalls nach den saisonbedingten Öffnungszeiten."
+  ],
+  "activities": [
+   {
+    "id": "kunst",
+    "title": "Kunst & Kultur",
+    "items": [
+     {
+      "name": "Südtiroler Archäologiemuseum",
+      "meta": "4 km",
+      "text": "Sehen Sie den „Ötzi“ live und erfahren Sie mehr über diese einmalige Kriminalgeschichte.",
+      "link": null
+     },
+     {
+      "name": "Messner Mountain Museum im Schloss Sigmundskron",
+      "meta": "5 km",
+      "text": "Begeben Sie sich auf die Spuren des berühmten Bergsteigers von Südtirol, Reinhold Messner.",
+      "link": null
+     },
+     {
+      "name": "Schloss Trautmannsdorf – Meran",
+      "meta": "23 km",
+      "text": "Schlendern Sie durch den botanischen Garten und besuchen Sie das Touriseum.",
+      "link": null
+     },
+     {
+      "name": "Benediktinerkloster Muri-Gries",
+      "meta": "3 km",
+      "text": "Das Kloster aus dem Jahre 1845 begeistert mit atemberaubenden Fresken.",
+      "link": null
+     },
+     {
+      "name": "Alte Pfarrkirche von Gries",
+      "meta": "4 km",
+      "text": "Eine römisch-katholische Kirche im spätgothischen Stil gebaut.",
+      "link": null
+     },
+     {
+      "name": "Merkantilmuseum und Merkantilgebäude",
+      "meta": "4 km",
+      "text": "Erfahren Sie mehr über die Wirtschaftsgeschichte Bozens und Südtirols.",
+      "link": null
+     },
+     {
+      "name": "Museum für moderne und zeitgenössische Kunst – Museion",
+      "meta": "5 km",
+      "text": "Das Museion beherbergt eine umfangreiche Sammlung in modernem Ambiente.",
+      "link": null
+     },
+     {
+      "name": "Naturmuseum Südtirol",
+      "meta": "6 km",
+      "text": "Hier erfahren Sie alles über die Entstehungsgeschichte der Südtiroler Alpen u. v. a. m.",
+      "link": null
+     },
+     {
+      "name": "„Busoni-Wettbewerb“ – internationaler Klavierwettbewerb",
+      "meta": "5 km",
+      "text": "Dieses sommerlich-musikalische Highlight ist ein Muss.",
+      "link": null
+     }
+    ]
+   },
+   {
+    "id": "freizeit",
+    "title": "Freizeit",
+    "items": [
+     {
+      "name": "Kalterer See",
+      "meta": "17 km",
+      "text": "Eingerahmt von Weinbergen entspannen Sie hier beim Baden, Angeln oder Tretboot-Fahren.",
+      "link": null
+     },
+     {
+      "name": "Montiggler Seen",
+      "meta": "13 km",
+      "text": "Diese im Wald versteckten Seen laden zum Spazierengehen und (Sonnen-)Baden ein.",
+      "link": null
+     },
+     {
+      "name": "Lido di Bolzano – Freibad in Bozen",
+      "meta": "5 km",
+      "text": "Für alle, die gerne ihre Bahnen ziehen möchten, empfiehlt sich unser Freibad, inklusive Kinderschwimmbecken.",
+      "link": null
+     },
+     {
+      "name": "Naturbad Gargazon",
+      "meta": "13 km",
+      "text": "Wunschlos-glücklich-Garantie: Schwimmen in natürlich angelegten Gewässern, Kinder- & Spaßbecken, Volleyball, Tischfußball u. v. a. m.",
+      "link": null
+     },
+     {
+      "name": "Therme Meran",
+      "meta": "26 km",
+      "text": "Sie suchen nach Entspannung im Spa mit Sauna und diversen Entspannungsbecken – dann sind Sie hier richtig!",
+      "link": null
+     },
+     {
+      "name": "Hochseilgarten Xsund – Terlan",
+      "meta": "5 km",
+      "text": "Über fünf Schwierigkeitsstufen können Sie sich herausfordern – trauen Sie sich, Sie schaffen das!",
+      "link": null
+     },
+     {
+      "name": "3D Bogenschießen Xsund – Terlan",
+      "meta": "5 km",
+      "text": "Ein Erlebnis für die ganze Familie, das für alle Einsteiger und Kinder zum Nachmittagsspaß wird.",
+      "link": null
+     },
+     {
+      "name": "Minigolf Tramin",
+      "meta": "23 km",
+      "text": "Das Besondere: hier können Sie auch Nachtgolfen – täglich von 11:00 bis 0:00 Uhr.",
+      "link": null
+     }
+    ]
+   },
+   {
+    "id": "essen",
+    "title": "Essen & Trinken",
+    "items": [
+     {
+      "name": "Restaurant Moosbauer",
+      "meta": "In Laufweite",
+      "text": "Obwohl das Restaurant Moosbauer zu einem Campingplatz gehört, bietet es ein überraschend lauschiges Ambiente und vor allem gutes italienisches Essen.",
+      "link": null
+     },
+     {
+      "name": "Panorama-Restaurant Leitenschenke",
+      "meta": "25 km",
+      "text": "Die besten Knödel Südtirols, sympathischer Familienbetrieb – einer unserer liebsten Orte, getoppt von einer grandiosen Aussicht!",
+      "link": null
+     },
+     {
+      "name": "Haselburg",
+      "meta": "8 km",
+      "text": "Hoch über Bozen gelegen, mit bester Aussicht auf den Talkessel, zum Sonnenuntergang sehr zu empfehlen (Reservierung empfohlen).",
+      "link": null
+     },
+     {
+      "name": "Fischzucht und Restaurant Krebsbach",
+      "meta": "16 km",
+      "text": "Fangen Sie doch Ihren Fisch oder Krebs wahlweise selbst bevor Sie ihn verspeisen.",
+      "link": null
+     },
+     {
+      "name": "Konditorei und Café Peter Paul",
+      "meta": "8 km",
+      "text": "Kuchen und Torten – alles vom Feinsten und Leckersten.",
+      "link": null
+     },
+     {
+      "name": "Gasthof Zum Falken",
+      "meta": "8 km",
+      "text": "Wir empfehlen das wöchentlich wechselnde Tiroler Tris, ein Klassiker der Südtiroler Küche.",
+      "link": null
+     }
+    ]
+   },
+   {
+    "id": "wandern",
+    "title": "Wandern",
+    "items": [
+     {
+      "name": "Tschögglberg",
+      "meta": "",
+      "text": "Der Wanderweg führt direkt an unserem Hof vorbei, ist also der ideale Einstieg.",
+      "link": null
+     },
+     {
+      "name": "Talferpromenade",
+      "meta": "",
+      "text": "Der Talfer ist „unser“ Fluss. Wenn Sie ihn entlang spazieren, entdecken Sie die Schlösser Runkelstein und Maretsch.",
+      "link": null
+     },
+     {
+      "name": "Schlern",
+      "meta": "25 km",
+      "text": "Rund um den Berg Schlern führen eine Vielzahl an Wanderwege. Wir empfehlen den Parkplatz am Völser Weiher als Ausgangspunkt.",
+      "link": null
+     },
+     {
+      "name": "Jenesien",
+      "meta": "14 km",
+      "text": "Der europäische Fernwanderweg E5 verläuft durch das Dorf, es besteht eine Seilbahnverbindung direkt aus Bozen.",
+      "link": null
+     },
+     {
+      "name": "Rittner Sonnenplateau",
+      "meta": "17 km",
+      "text": "Entdecken Sie die bekannten Erdpyramiden am Ritten, z. B. in Oberbozen oder Lengmoos.",
+      "link": null
+     },
+     {
+      "name": "Waalwege Lana",
+      "meta": "18 km",
+      "text": "Diese besonders einfachen Wanderwege führen entlang alter Wasserläufe, die zur Bewässerung der Felder und Weinberge genutzt wurden.",
+      "link": null
+     },
+     {
+      "name": "Stieber Wasserfall",
+      "meta": "55 km",
+      "text": "Vom Parkplatz in Moos führt links ein Forstweg Richtung Fluss, folgen Sie fortan nur dem Rauschen des Wassers.",
+      "link": null
+     }
+    ]
+   },
+   {
+    "id": "winter",
+    "title": "Wintersport",
+    "items": [
+     {
+      "name": "Reinswald, Sarntal",
+      "meta": "38 km",
+      "text": "4 Lifte, 21 km Skipiste, Skitouren und Snowpark",
+      "link": {
+       "href": "https://www.sarntal.com/de/bergbahnen/das-skigebiet-reinswald/bergbahnen-preise-pisten.html",
+       "label": "Informationen"
+      }
+     },
+     {
+      "name": "Rittner Horn",
+      "meta": "35 km",
+      "text": "3 Lifte, 15 km Skipiste, Langlaufloipen, Rodeln und Winterwanderwege",
+      "link": {
+       "href": "https://www.ritten.com/de/sonnenplateau/rittnerhorn/lifte-pisten.html",
+       "label": "Informationen"
+      }
+     },
+     {
+      "name": "Obereggen, Latemar",
+      "meta": "34 km",
+      "text": "18 Lifte, 48 km Skipiste, 2 Rodelbahnen und Snowpark",
+      "link": {
+       "href": "https://obereggen.com/de/Winter/Skigebiet",
+       "label": "Informationen"
+      }
+     },
+     {
+      "name": "Carezza – Karersee",
+      "meta": "25 km",
+      "text": "15 Lifte, 40 km Skipiste , 4 Rodelbahnen, 16 km Langlaufloipen und Snowfunpark",
+      "link": {
+       "href": "https://carezza.it/de",
+       "label": "Informationen"
+      }
+     },
+     {
+      "name": "Gröden",
+      "meta": "50 km",
+      "text": "34 Lifte, 115 km Skipiste, Rodelbahn und 133 km Langlaufloipen",
+      "link": {
+       "href": "https://www.dolomitisuperski.com/de/skigebiet/groeden",
+       "label": "Informationen"
+      }
+     },
+     {
+      "name": "Seiser Alm",
+      "meta": "27 km",
+      "text": "21 Lifte, 60 km Skipiste, 60 km Langlaufloipen und Funpark",
+      "link": {
+       "href": "https://www.dolomitisuperski.com/de/skigebiet/seiser-alm",
+       "label": "Informationen"
+      }
+     },
+     {
+      "name": "Meran 2000",
+      "meta": "28 km",
+      "text": "8 Lifte, 40 km Skipiste, 2 Rodelbahnen und Langlaufloipen",
+      "link": {
+       "href": "https://www.meran2000.com/winter/",
+       "label": "Informationen"
+      }
+     }
+    ]
+   },
+   {
+    "id": "markt",
+    "title": "Märkte",
+    "items": [
+     {
+      "name": "Wochenmarkt Bozen",
+      "meta": "Samstags bis 14 Uhr, Siegesplatz",
+      "text": "Alles, was das Herz begehrt: Wurst, Käse, Fleisch, Fisch, Obst und Gemüse – Bio oder konventionell.",
+      "link": null
+     },
+     {
+      "name": "Biobauernmarkt Bozen",
+      "meta": "Dienstags 7:30 – 13:00 Uhr, Rathausplatz",
+      "text": "Regional, biologisch, persönlich.",
+      "link": null
+     },
+     {
+      "name": "Bauernmarkt Bozen",
+      "meta": "Dienstags Mazziniplatz und freitags Rathausplatz",
+      "text": "Hier finden Sie alles aus der Region.",
+      "link": null
+     },
+     {
+      "name": "Traditioneller Bozner Blumenmarkt",
+      "meta": "Immer um den ersten Mai, Waltherplatz",
+      "text": "Besondere Blumen und Gestecke finden Sie nur hier.",
+      "link": null
+     },
+     {
+      "name": "Christkindlmarkt",
+      "meta": "Ende November – Anfang Januar, Waltherplatz",
+      "text": "Weihnachtsstimmung, ein Handwerkermarkt und der obligatorische Glühwein verführen Sie in dieser besinnlichen Zeit.",
+      "link": null
+     },
+     {
+      "name": "Frühlingsmarkt",
+      "meta": "Immer Ende März, Waltherplatz",
+      "text": "Das Frühlingserwachen wird mit der ganzen Familie gefeiert.",
+      "link": null
+     }
+    ]
+   }
+  ],
+  "imprint": "<p>Brandlgut KG <br>des Gasser Anton - Landwirtschaftliche Gesellschaft<br> Moritzinger Weg 63<br>39100 Bozen, Italien</p> <p>Telefon: +39 349 2134607<br> E-Mail: <a href=\"mailto:brandlgut@hotmail.com\" rel=\"noopener\">info@brandlgut.com</a></p> <p>CIN: IT021008B5UCN4TZUS</p> <p><em>Vertreten durch:</em><br>Komplementär Gasser Anton</p> <p><em>Registereintrag:</em><br>Eingetragen im Handelsregister<br>Registergericht: Bozen<br>Registernummer: BZ 184004</p> <p><em>Umsatzsteuer-ID: </em><br>Umsatzsteuer-Identifikationsnummer nach § 27a Umsatzsteuergesetz: IT02515480214</p> <p><em>Aufsichtsbehörde: </em><br>Gemeinde Bozen</p> <h3>Disclaimer – rechtliche Hinweise</h3>  <p>§ 1 Warnhinweis zu Inhalten<br> Die kostenlosen und frei zugänglichen Inhalte dieser Webseite wurden mit größtmöglicher Sorgfalt erstellt. Der Anbieter dieser Webseite übernimmt jedoch keine Gewähr für die Richtigkeit und Aktualität der bereitgestellten kostenlosen und frei zugänglichen journalistischen Ratgeber und Nachrichten. Namentlich gekennzeichnete Beiträge geben die Meinung des jeweiligen Autors und nicht immer die Meinung des Anbieters wieder. Allein durch den Aufruf der kostenlosen und frei zugänglichen Inhalte kommt keinerlei Vertragsverhältnis zwischen dem Nutzer und dem Anbieter zustande, insoweit fehlt es am Rechtsbindungswillen des Anbieters.<br> <br> § 2 Externe Links<br> Diese Website enthält Verknüpfungen zu Websites Dritter (\"externe Links\"). Diese Websites unterliegen der Haftung der jeweiligen Betreiber. Der Anbieter hat bei der erstmaligen Verknüpfung der externen Links die fremden Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße bestehen. Zu dem Zeitpunkt waren keine Rechtsverstöße ersichtlich. Der Anbieter hat keinerlei Einfluss auf die aktuelle und zukünftige Gestaltung und auf die Inhalte der verknüpften Seiten. Das Setzen von externen Links bedeutet nicht, dass sich der Anbieter die hinter dem Verweis oder Link liegenden Inhalte zu Eigen macht. Eine ständige Kontrolle der externen Links ist für den Anbieter ohne konkrete Hinweise auf Rechtsverstöße nicht zumutbar. Bei Kenntnis von Rechtsverstößen werden jedoch derartige externe Links unverzüglich gelöscht.<br> <br> § 3 Urheber- und Leistungsschutzrechte<br> Die auf dieser Website veröffentlichten Inhalte unterliegen dem deutschen Urheber- und Leistungsschutzrecht. Jede vom deutschen Urheber- und Leistungsschutzrecht nicht zugelassene Verwertung bedarf der vorherigen schriftlichen Zustimmung des Anbieters oder jeweiligen Rechteinhabers. Dies gilt insbesondere für Vervielfältigung, Bearbeitung, Übersetzung, Einspeicherung, Verarbeitung bzw. Wiedergabe von Inhalten in Datenbanken oder anderen elektronischen Medien und Systemen. Inhalte und Rechte Dritter sind dabei als solche gekennzeichnet. Die unerlaubte Vervielfältigung oder Weitergabe einzelner Inhalte oder kompletter Seiten ist nicht gestattet und strafbar. Lediglich die Herstellung von Kopien und Downloads für den persönlichen, privaten und nicht kommerziellen Gebrauch ist erlaubt.<br> <br> Die Darstellung dieser Website in fremden Frames ist nur mit schriftlicher Erlaubnis zulässig.<br> <br> § 4 Besondere Nutzungsbedingungen<br> Soweit besondere Bedingungen für einzelne Nutzungen dieser Website von den vorgenannten Paragraphen abweichen, wird an entsprechender Stelle ausdrücklich darauf hingewiesen. In diesem Falle gelten im jeweiligen Einzelfall die besonderen Nutzungsbedingungen.</p> <p>Erstellt mit Hilfe von JuraForum.de - <a href=\"https://www.juraforum.de/impressum-generator\" rel=\"noopener\">www.JuraForum.de</a></p>  <h3>Internet</h3>  <p><em>Gestaltung &amp; Fotografie: <br></em>Andreas Steffan - <a href=\"https://www.andreassteffan.com/\" rel=\"noopener\">www.andreassteffan.com</a> </p> <p><br><em>Umsetzung: </em><br>Frank Seidel - <a href=\"http://fhseidel.de\" rel=\"noopener\">www.fhseidel.de</a> </p> <p><em>Powered by</em> CMSimple_XH - <a href=\"https://www.cmsimple-xh.org/\" rel=\"noopener\">www.cmsimple-xh.org</a> </p>",
+  "privacy": "<p>Wir informieren Sie nachfolgend gemäß den gesetzlichen Vorgaben des Datenschutzrechts (insb. gemäß BDSG n.F. und der europäischen Datenschutz-Grundverordnung ‚DS-GVO‘) über die Art, den Umfang und Zweck der Verarbeitung personenbezogener Daten durch unser Unternehmen. Diese Datenschutzerklärung gilt auch für unsere Websites und Sozial-Media-Profile. Bezüglich der Definition von Begriffen wie etwa „personenbezogene Daten“ oder „Verarbeitung“ verweisen wir auf Art. 4 DS-GVO.</p>  <strong>Name und Kontaktdaten des / der Verantwortlichen</strong><br> Unser/e Verantwortliche/r (nachfolgend „Verantwortlicher“) i.S.d. Art. 4 Zif. 7 DS-GVO ist:<br> <br>Brandlgut KG <br>des Gasser Anton - Landwirtschaftliche Gesellschaft<br>Moritzinger Weg 63<br>39100 Bozen, Italien<br>Komplementär Gasser Anton<br>Handelsregister/Nr.: BZ 184004<br>Registergericht: Bozen<br>E-Mail-Adresse: brandlgut@hotmail.com<br><br><strong>Datenarten, Zwecke der Verarbeitung und Kategorien betroffener Personen</strong><br> <p>Nachfolgend informieren wir Sie über Art, Umfang und Zweck der Erhebung, Verarbeitung und Nutzung personenbezogener Daten.</p> <strong>1. Arten der Daten, die wir verarbeiten</strong><br>Bestandsdaten (Name, Adresse, etc.), Kontaktdaten (Telefonnummer, E-Mail, Fax, etc.), <br> <br> <strong>2. Zwecke der Verarbeitung nach Art. 13 Abs. 1 c) DS-GVO</strong><br>Website technisch und wirtschaftlich optimieren, leichten Zugang zur Website ermöglichen, kommerzielle Nutzung der Website unterstützen, Website benutzerfreundlich gestalten, <br> <br> <strong>3. Kategorien der betroffenen Personen nach Art. 13 Abs. 1 e) DS-GVO</strong><br>Besucher/Nutzer der Website, Kunden, Lieferanten, Interessenten, <br> <br> <p>Die betroffenen Personen werden zusammenfassend als „Nutzer“ bezeichnet.</p> <br> <strong>Rechtsgrundlagen der Verarbeitung personenbezogener Daten</strong> <p>Nachfolgend Informieren wir Sie über die Rechtsgrundlagen der Verarbeitung personenbezogener Daten:</p> <ol> <li>Wenn wir Ihre Einwilligung für die Verarbeitung personenbezogenen Daten eingeholt haben, ist Art. 6 Abs. 1 S. 1 lit. a) DS-GVO Rechtsgrundlage.</li> <li>Ist die Verarbeitung zur Erfüllung eines Vertrags oder zur Durchführung vorvertraglicher Maßnahmen erforderlich, die auf Ihre Anfrage hin erfolgen, so ist Art. 6 Abs. 1 S. 1 lit. b) DS-GVO Rechtsgrundlage.</li> <li>Ist die Verarbeitung zur Erfüllung einer rechtlichen Verpflichtung erforderlich, der wir unterliegen (z.B. gesetzliche Aufbewahrungspflichten), so ist Art. 6 Abs. 1 S. 1 lit. c) DS-GVO Rechtsgrundlage.</li> <li>Ist die Verarbeitung erforderlich, um lebenswichtige Interessen der betroffenen Person oder einer anderen natürlichen Person zu schützen, so ist Art. 6 Abs. 1 S. 1 lit. d) DS-GVO Rechtsgrundlage.</li> <li>Ist die Verarbeitung zur Wahrung unserer oder der berechtigten Interessen eines Dritten erforderlich und überwiegen diesbezüglich Ihre Interessen oder Grundrechte und Grundfreiheiten nicht, so ist Art. 6 Abs. 1 S. 1 lit. f) DS-GVO Rechtsgrundlage.</li> </ol> <br> <strong>Weitergabe personenbezogener Daten an Dritte und Auftragsverarbeiter</strong> <p>Ohne Ihre Einwilligung geben wir grundsätzlich keine Daten an Dritte weiter. Sollte dies doch der Fall sein, dann erfolgt die Weitergabe auf der Grundlage der zuvor genannten Rechtsgrundlagen z.B. bei der Weitergabe von Daten an Online-Paymentanbieter zur Vertragserfüllung oder aufgrund gerichtlicher Anordnung oder wegen einer gesetzlichen Verpflichtung zur Herausgabe der Daten zum Zwecke der Strafverfolgung, zur Gefahrenabwehr oder zur Durchsetzung der Rechte am geistigen Eigentum.<br> Wir setzen zudem Auftragsverarbeiter (externe Dienstleister z.B. zum Webhosting unserer Websites und Datenbanken) zur Verarbeitung Ihrer Daten ein. Wenn im Rahmen einer Vereinbarung zur Auftragsverarbeitung an die Auftragsverarbeiter Daten weitergegeben werden, erfolgt dies immer nach Art. 28 DS-GVO. Wir wählen dabei unsere Auftragsverarbeiter sorgfältig aus, kontrollieren diese regelmäßig und haben uns ein Weisungsrecht hinsichtlich der Daten einräumen lassen. Zudem müssen die Auftragsverarbeiter geeignete technische und organisatorische Maßnahmen getroffen haben und die Datenschutzvorschriften gem. BDSG n.F. und DS-GVO einhalten</p> <br> <strong>Datenübermittlung in Drittstaaten</strong> <p>Durch die Verabschiedung der europäischen Datenschutz-Grundverordnung (DS-GVO) wurde eine einheitliche Grundlage für den Datenschutz in Europa geschaffen. Ihre Daten werden daher vorwiegend durch Unternehmen verarbeitet, für die DS-GVO Anwendung findet. Sollte doch die Verarbeitung durch Dienste Dritter außerhalb der Europäischen Union oder des Europäischen Wirtschaftsraums stattfinden, so müssen diese die besonderen Voraussetzungen der Art. 44 ff. DS-GVO erfüllen. Das bedeutet, die Verarbeitung erfolgt aufgrund besonderer Garantien, wie etwa die von der EU-Kommission offiziell anerkannte Feststellung eines der EU entsprechenden Datenschutzniveaus oder der Beachtung offiziell anerkannter spezieller vertraglicher Verpflichtungen, der so genannten „Standardvertragsklauseln“. Bei US-Unternehmen erfüllt die Unterwerfung unter das sog. „Privacy-Shield“, dem Datenschutzabkommen zwischen der EU und den USA, diese Voraussetzungen.</p> <br> <strong>Löschung von Daten und Speicherdauer</strong> <p>Sofern nicht in dieser Datenschutzerklärung ausdrücklich angegeben, werden Ihre personenbezogen Daten gelöscht oder gesperrt, sobald der Zweck für die Speicherung entfällt, es sei denn deren weitere Aufbewahrung ist zu Beweiszwecken erforderlich oder dem stehen gesetzliche Aufbewahrungspflichten entgegenstehen. Darunter fallen etwa handelsrechtliche Aufbewahrungspflichten von Geschäftsbriefen nach § 257 Abs. 1 HGB (6 Jahre) sowie steuerrechtliche Aufbewahrungspflichten nach § 147 Abs. 1 AO von Belegen (10 Jahre). Wenn die vorgeschriebene Aufbewahrungsfrist abläuft, erfolgt eine Sperrung oder Löschung Ihrer Daten, es sei denn die Speicherung ist weiterhin für einen Vertragsabschluss oder zur Vertragserfüllung erforderlich.</p> <br> <strong>Bestehen einer automatisierten Entscheidungsfindung</strong> <p>Wir setzen keine automatische Entscheidungsfindung oder ein Profiling ein.</p> <br> <strong>Bereitstellung unserer Website und Erstellung von Logfiles</strong> <ol> <li>Wenn Sie unsere Webseite lediglich informatorisch nutzen (also keine Registrierung und auch keine anderweitige Übermittlung von Informationen), erheben wir nur die personenbezogenen Daten, die Ihr Browser an unseren Server übermittelt. Wenn Sie unsere Website betrachten möchten, erheben wir die folgenden Daten: • IP-Adresse;<br> • Internet-Service-Provider des Nutzers;<br> • Datum und Uhrzeit des Abrufs;<br> • Browsertyp;<br> • Sprache und Browser-Version;<br> • Inhalt des Abrufs;<br> • Zeitzone;<br> • Zugriffsstatus/HTTP-Statuscode;<br> • Datenmenge;<br> • Websites, von denen die Anforderung kommt;<br> • Betriebssystem.<br> Eine Speicherung dieser Daten zusammen mit anderen personenbezogenen Daten von Ihnen findet nicht statt.<br><br></li> <li>Diese Daten dienen dem Zweck der nutzerfreundlichen, funktionsfähigen und sicheren Auslieferung unserer Website an Sie mit Funktionen und Inhalten sowie deren Optimierung und statistischen Auswertung.<br><br></li> <li>Rechtsgrundlage hierfür ist unser in den obigen Zwecken auch liegendes berechtigtes Interesse an der Datenverarbeitung nach Art. 6 Abs. 1 S.1 lit. f) DS-GVO.<br><br></li> <li>Wir speichern aus Sicherheitsgründen diese Daten in Server-Logfiles für die Speicherdauer von Tagen. Nach Ablauf dieser Frist werden diese automatisch gelöscht, es sei denn wir benötigen deren Aufbewahrung zu Beweiszwecken bei Angriffen auf die Serverinfrastruktur oder anderen Rechtsverletzungen.</li> </ol> <br> <strong>Cookies</strong> <ol> <li>Wir verwenden sog. Cookies bei Ihrem Besuch unserer Website. Cookies sind kleine Textdateien, die Ihr Internet-Browser auf Ihrem Rechner ablegt und speichert. Wenn Sie unsere Website erneut aufrufen, geben diese Cookies Informationen ab, um Sie automatisch wiederzuerkennen. Die so erlangten Informationen dienen dem Zweck, unsere Webangebote technisch und wirtschaftlich zu optimieren und Ihnen einen leichteren und sicheren Zugang auf unsere Website zu ermöglichen. Wir informieren Sie dazu beim Aufruf unserer Website mittels eines Hinweises auf unsere Datenschutzerklärung über die Verwendung von Cookies zu den zuvor genannten Zwecken und wie Sie dieser widersprechen bzw. deren Speicherung verhindern können („Opt-out“). Unsere Website nutzt Session-Cookies, persistente Cookies und Cookies von Drittanbietern:<br><br> <strong>• Session-Cookies:</strong> Wir verwenden sog. Cookies zum Wiedererkennen mehrfacher Nutzung eines Angebots durch denselben Nutzer (z.B. wenn Sie sich eingeloggt haben zur Feststellung Ihres Login-Status). Wenn Sie unsere Seite erneut aufrufen, geben diese Cookies Informationen ab, um Sie automatisch wiederzuerkennen. Die so erlangten Informationen dienen dazu, unsere Angebote zu optimieren und Ihnen einen leichteren Zugang auf unsere Seite zu ermöglichen. Wenn Sie den Browser schließen oder Sie sich ausloggen, werden die Session-Cookies gelöscht.<br><br> <strong>• Persistente Cookies:</strong> Diese werden automatisiert nach einer vorgegebenen Dauer gelöscht, die sich je nach Cookie unterscheiden kann. In den Sicherheitseinstellungen Ihres Browsers können Sie die Cookies jederzeit löschen.<br><br> <strong>• Cookies von Drittanbietern (Third-Party-Cookies):</strong> Entsprechend Ihren Wünschen können Sie können Ihre Browser-Einstellung konfigurieren und z. B. Die Annahme von Third-Party-Cookies oder allen Cookies ablehnen. Wir weisen Sie jedoch an dieser Stelle darauf hin, dass Sie dann eventuell nicht alle Funktionen dieser Website nutzen können. Lesen Sie Näheres zu diesen Cookies bei den jeweiligen Datenschutzerklärungen zu den Drittanbietern.<br><br></li> <li>Rechtsgrundlage dieser Verarbeitung ist Art. 6 Abs. 1 S. lit. b) DS-GVO, wenn die Cookies zur Vertragsanbahnung z.B. bei Bestellungen gesetzt werden und ansonsten haben wir ein berechtigtes Interesse an der effektiven Funktionalität der Website, so dass in dem Falle Art. 6 Abs. 1 S. 1 lit. f) DS-GVO Rechtsgrundlage ist.<br><br></li> <li><strong>Widerspruch und „Opt-Out“:</strong> Das Speichern von Cookies auf Ihrer Festplatte können Sie allgemein verhindern, indem Sie in Ihren Browser-Einstellungen „keine Cookies akzeptieren“ wählen. Dies kann aber eine Funktionseinschränkung unserer Angebote zur Folge haben. Sie können dem Einsatz von Cookies von Drittanbietern zu Werbezwecken über ein sog. „Opt-out“ über diese amerikanische Website (<a href=\"https://optout.aboutads.info\" rel=\"noopener\">https://optout.aboutads.info</a>) oder diese europäische Website (<a href=\"http://www.youronlinechoices.com/de/praferenzmanagement/\" rel=\"noopener\">http://www.youronlinechoices.com/de/praferenzmanagement/</a>) widersprechen.</li> </ol> <br> <strong>Kontaktaufnahme per Kontaktformular / E-Mail / Fax / Post</strong> <ol> <li>Bei der Kontaktaufnahme mit uns per Kontaktformular, Fax, Post oder E-Mail werden Ihre Angaben zum Zwecke der Abwicklung der Kontaktanfrage verarbeitet.<br><br></li> <li>Rechtsgrundlage für die Verarbeitung der Daten ist bei Vorliegen einer Einwilligung von Ihnen Art. 6 Abs. 1 S. 1 lit. a) DS-GVO. Rechtsgrundlage für die Verarbeitung der Daten, die im Zuge einer Kontaktanfrage oder E-Mail, eines Briefes oder Faxes übermittelt werden, ist Art. 6 Abs. 1 S. 1 lit. f) DS-GVO. Der Verantwortliche hat ein berechtigtes Interesse an der Verarbeitung und Speicherung der Daten, um Anfragen der Nutzer beantworten zu können, zur Beweissicherung aus Haftungsgründen und um ggf. seiner gesetzlichen Aufbewahrungspflichten bei Geschäftsbriefen nachkommen zu können. Zielt der Kontakt auf den Abschluss eines Vertrages ab, so ist zusätzliche Rechtsgrundlage für die Verarbeitung Art. 6 Abs. 1 S. 1 lit. b) DS-GVO.<br><br></li> <li>Wir können Ihre Angaben und Kontaktanfrage in unserem Customer-Relationship-Management System (\"CRM System\") oder einem vergleichbaren System speichern.<br><br></li> <li>Die Daten werden gelöscht, sobald sie für die Erreichung des Zweckes ihrer Erhebung nicht mehr erforderlich sind. Für die personenbezogenen Daten aus der Eingabemaske des Kontaktformulars und diejenigen, die per E-Mail übersandt wurden, ist dies dann der Fall, wenn die jeweilige Konversation mit Ihnen beendet ist. Beendet ist die Konversation dann, wenn sich aus den Umständen entnehmen lässt, dass der betroffene Sachverhalt abschließend geklärt ist. Anfragen von Nutzern, die über einen Account bzw. Vertrag mit uns verfügen, speichern wir bis zum Ablauf von zwei Jahren nach Vertragsbeendigung. Im Fall von gesetzlichen Archivierungspflichten erfolgt die Löschung nach deren Ablauf: Ende handelsrechtlicher (6 Jahre) und steuerrechtlicher (10 Jahre) Aufbewahrungspflicht.<br><br></li> <li>Sie haben jederzeit die Möglichkeit, die Einwilligung nach Art. 6 Abs. 1 S. 1 lit. a) DS-GVO zur Verarbeitung der personenbezogenen Daten zu widerrufen. Nehmen Sie per E-Mail Kontakt mit uns auf, so können Sie der Speicherung der personenbezogenen Daten jederzeit widersprechen.<br><br></li> </ol> <br> <strong>Kontaktaufnahme per Telefon</strong> <ol> <li>Bei der Kontaktaufnahme mit uns per Telefon wird Ihre Telefonnummer zur Bearbeitung der Kontaktanfrage und deren Abwicklung verarbeitet und temporär im RAM / Cache des Telefongerätes / Displays gespeichert bzw. angezeigt. Die Speicherung erfolgt aus Haftungs- und Sicherheitsgründen, um den Beweis des Anrufs führen zu können sowie aus wirtschaftlichen Gründen, um einen Rückruf zu ermöglichen. Im Falle von unberechtigten Werbeanrufen, sperren wir die Rufnummern.<br><br></li> <li>Rechtsgrundlage für die Verarbeitung der Telefonnummer ist Art. 6 Abs. 1 S. 1 lit. f) DS-GVO. Zielt der Kontakt auf den Abschluss eines Vertrages ab, so ist zusätzliche Rechtsgrundlage für die Verarbeitung Art. 6 Abs. 1 lit. b) DS-GVO.<br><br></li> <li>Der Gerätecache speichert die Anrufe Tage und überschreibt bzw. löscht sukzessiv alte Daten, bei Entsorgung des Gerätes werden alle Daten gelöscht und der Speicher ggf. zerstört. Gesperrte Telefonnummer werden jährlich auf die Notwendigkeit der Sperrung geprüft.<br><br></li> <li>Sie können die Anzeige der Telefonnummer verhindern, indem Sie mit unterdrückter Telefonnummer anrufen.<br><br></li> </ol> <br> <strong>Google Maps</strong> <ol> <li>Wir haben auf unserer Website Karten von „Google Maps“ (Google Inc., 1600 Amphitheater Parkway, Mountainview, California 94043, USA, EU-Niederlassung: Google Dublin, Google Ireland Ltd., Gordon House, Barrow Street, Dublin 4, Ireland) integriert. Damit können wirden Standort von Adressen und eine Anfahrtsbeschreibung direkt auf unserer Website in interaktiven Karten anzeigen und Ihnen die Nutzung dieses Tools ermöglichen.<br><br></li> <li>Bei dem Abruf unserer Website, wo Google Maps integriert ist, wird eine Verbindung zu den Servern von Google in den USA aufgebaut. Hierbei können Ihre IP und Standort an Google übertragen werden. Zudem erhält Google die Information, dass Sie die entsprechende Seite aufgerufen haben. Dies erfolgt auch ohne Nutzerkonto bei Google. Sollten Sie in Ihren Google-Account eingeloggt sein, kann Google die obigen Daten Ihrem Account zuordnen. Wenn Sie dies nicht wünschen, müssen Sie sich bei Ihrem Google-Account ausloggen. Google erstellt aus solchen Daten Nutzerprofile und nutzt diese Daten zum Zwecke der Werbung, Marktforschung oder Optimierung seiner Websites.<br><br></li> <li>Rechtsgrundlage hierfür ist unser in den obigen Zwecken auch liegendes berechtigtes Interesse an der Datenverarbeitung nach Art. 6 Abs. 1 S.1 lit. f) DS-GVO.<br><br></li> <li>Sie haben gegenüber Google ein Widerspruchsrecht gegen die Bildung von Nutzerprofilen. Bitte richten Sie sich deswegen direkt an Google über die unten genannte Datenschutzerklärung. Ein Opt-Out-Widerspruch hinsichtlich der Werbe-Cookies können Sie hier in Ihrem Google-Account vornehmen:<br><a href=\"https://adssettings.google.com/authenticated\" rel=\"noopener\">https://adssettings.google.com/authenticated</a>.<br><br></li> <li>In den Nutzungsbedingungen von Google Maps unter <a href=\"https://www.google.com/intl/de_de/help/terms_maps.html\" rel=\"noopener\">https://www.google.com/intl/de_de/help/terms_maps.html</a> und in der Datenschutzerklärung für Werbung von Google unter <a href=\"https://policies.google.com/technologies/ads\" rel=\"noopener\">https://policies.google.com/technologies/ads</a> finden Sie weitere Informationen zur Verwendung von Google Cookies und deren Werbetechnologien, Speicherdauer, Anonymisierung, Standortdaten, Funktionsweise und Ihre Rechte. Allgemeine Datenschutzerklärung von Google: <a href=\"https://policies.google.com/privacy\" rel=\"noopener\">https://policies.google.com/privacy</a>.<br><br></li> <li>Google ist nach dem EU-US Privacy Shield zertifiziert (<a href=\"https://www.privacyshield.gov/EU-US-Framework\" rel=\"noopener\">https://www.privacyshield.gov/EU-US-Framework</a>) und daher verpflichtet europäisches Datenschutzrecht einzuhalten.<br><br></li> </ol> <br> <strong>Rechte der betroffenen Person</strong> <ol> <li><strong>Widerspruch oder Widerruf gegen die Verarbeitung Ihrer Daten</strong><br><br> Soweit die Verarbeitung auf Ihrer Einwilligung gemäß Art. 6 Abs. 1 S. 1 lit. a), Art. 7 DS-GVO beruht, haben Sie das Recht, die Einwilligung jederzeit zu widerrufen. Die Rechtmäßigkeit der aufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung wird dadurch nicht berührt.<br><br> Soweit wir die Verarbeitung Ihrer personenbezogenen Daten auf die Interessenabwägung gemäß Art. 6 Abs. 1 S. 1 lit. f) DS-GVO stützen, können Sie Widerspruch gegen die Verarbeitung einlegen. Dies ist der Fall, wenn die Verarbeitung insbesondere nicht zur Erfüllung eines Vertrags mit Ihnen erforderlich ist, was von uns jeweils bei der nachfolgenden Beschreibung der Funktionen dargestellt wird. Bei Ausübung eines solchen Widerspruchs bitten wir um Darlegung der Gründe, weshalb wir Ihre personenbezogenen Daten nicht wie von uns durchgeführt verarbeiten sollten. Im Falle Ihres begründeten Widerspruchs prüfen wir die Sachlage und werden entweder die Datenverarbeitung einstellen bzw. anpassen oder Ihnen unsere zwingenden schutzwürdigen Gründe aufzeigen, aufgrund derer wir die Verarbeitung fortführen.<br><br> Sie können der Verarbeitung Ihrer personenbezogenen Daten für Zwecke der Werbung und Datenanalyse jederzeit widersprechen. Das Widerspruchsrecht können Sie kostenfrei ausüben. Über Ihren Werbewiderspruch können Sie uns unter folgenden Kontaktdaten informieren:<br><br>Brandlgut KG <br>des Gasser Anton - Landwirtschaftliche Gesellschaft<br>Moritzinger Weg 63<br>39100 Bozen, Italien<br>Komplementär Gasser Anton<br>Handelsregister/Nr.: BZ 184004<br>Registergericht: Bozen<br>E-Mail-Adresse: <a href=\"mailto:brandlgut@hotmail.com\" rel=\"noopener\">info@brandlgut.com</a><strong><br></strong></li> <li><strong>Recht auf Auskunft</strong><br> Sie haben das Recht, von uns eine Bestätigung darüber zu verlangen, ob Sie betreffende personenbezogene Daten verarbeitet werden. Sofern dies der Fall ist, haben Sie ein Recht auf Auskunft über Ihre bei uns gespeicherten persönlichen Daten nach Art. 15 DS-GVO. Dies beinhaltet insbesondere die Auskunft über die Verarbeitungszwecke, die Kategorie der personenbezogenen Daten, die Kategorien von Empfängern, gegenüber denen Ihre Daten offengelegt wurden oder werden, die geplante Speicherdauer, die Herkunft ihrer Daten, sofern diese nicht direkt bei Ihnen erhoben wurden.<br><br></li> <li><strong>Recht auf Berichtigung</strong><br> Sie haben ein Recht auf Berichtigung unrichtiger oder auf Vervollständigung richtiger Daten nach Art. 16 DS-GVO. <br><br></li> <li><strong>Recht auf Löschung</strong><br> Sie haben ein Recht auf Löschung Ihrer bei uns gespeicherten Daten nach Art. 17 DS-GVO, es sei denn gesetzliche oder vertraglichen Aufbewahrungsfristen oder andere gesetzliche Pflichten bzw. Rechte zur weiteren Speicherung stehen dieser entgegen. <br><br></li> <li><strong>Recht auf Einschränkung</strong><br> Sie haben das Recht, eine Einschränkung bei der Verarbeitung Ihrer personenbezogenen Daten zu verlangen, wenn eine der Voraussetzungen in Art. 18 Abs. 1 lit. a) bis d) DS-GVO erfüllt ist:<br> • Wenn Sie die Richtigkeit der Sie betreffenden personenbezogenen für eine Dauer bestreiten, die es dem Verantwortlichen ermöglicht, die Richtigkeit der personenbezogenen Daten zu überprüfen;<br><br> • die Verarbeitung unrechtmäßig ist und Sie die Löschung der personenbezogenen Daten ablehnen und stattdessen die Einschränkung der Nutzung der personenbezogenen Daten verlangen;<br><br> • der Verantwortliche die personenbezogenen Daten für die Zwecke der Verarbeitung nicht länger benötigt, Sie diese jedoch zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen benötigen, oder<br><br> • wenn Sie Widerspruch gegen die Verarbeitung gemäß Art. 21 Abs. 1 DS-GVO eingelegt haben und noch nicht feststeht, ob die berechtigten Gründe des Verantwortlichen gegenüber Ihren Gründen überwiegen.<br><br></li> <li><strong>Recht auf Datenübertragbarkeit</strong><br> Sie haben ein Recht auf Datenübertragbarkeit nach Art. 20 DS-GVO, was bedeutet, dass Sie die bei uns über Sie gespeicherten personenbezogenen Daten in einem strukturierten, gängigen und maschinenlesbaren Format erhalten können oder die Übermittlung an einen anderen Verantwortlichen verlangen können. <br><br></li> <li><strong>Recht auf Beschwerde</strong><br> Sie haben ein Recht auf Beschwerde bei einer Aufsichtsbehörde. In der Regel können Sie sich hierfür an die Aufsichtsbehörde insbesondere in dem Mitgliedstaat ihres Aufenthaltsorts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes wenden. <br><br></li> </ol> <br> <strong>Datensicherheit</strong> <p>Um alle personenbezogen Daten, die an uns übermittelt werden, zu schützen und um sicherzustellen, dass die Datenschutzvorschriften von uns, aber auch unseren externen Dienstleistern eingehalten werden, haben wir geeignete technische und organisatorische Sicherheitsmaßnahmen getroffen. Deshalb werden unter anderem alle Daten zwischen Ihrem Browser und unserem Server über eine sichere SSL-Verbindung verschlüsselt übertragen.</p> <br> <br> <em>Stand: 10.09.2018</em> <p>Erstellt mit Hilfe von JuraForum.de - <a href=\"https://www.juraforum.de/impressum-generator\" rel=\"noopener\">www.JuraForum.de</a></p>"
+ },
+ "en": {
+  "farm": [
+   "The Brandlgut-Farm was built in the late 19th century and we assumed responsibility in 2006. After a perennial reconstruction and moderinization phase we are welcoming a huge variety of guest in our re- and self-designed guestrooms since July 2016.",
+   "Our farm is a two hectare wineary in a prime location with optimal conditions for cultivating a vine variety called \"Lagrein\" . But a small part of our farm is reserved for cultivating selected fruits (apples, pears, cherry etc.) and vegetables (tomato, cucumber, pumpkin etc.) which contribute to our self-sufficiency and, of course, are served our guests as well. Additionally, we provide fresh farm-based eggs every morning during breakfast.",
+   "It is very important for us to get in contact with our guests through a personal service – that is why we foster openes. This occurs most effectivly with a morning cup of coffee, fresh biscuits and local delights at our breakfast room which is completely build of spruce wood.",
+   "To relax from everyday life we provide our huge shared terrace and sunbathing lawn with a fantastic view on the valley. The kids will definitely love the wide space we provide for playing and romping as well as our small playground with sandbox and a big swing. If you enjoy playing with dogs you will love to get to know Mira.",
+   "You want to find out more about our work as winemakers? We offer small individual guided tours – please feel free to contact us."
+  ],
+  "policies": [
+   "Our prices are quoted per night and room at a minimum stay of three nights. The breakfast is not included. For 18 € per day and person you can enjoy our daily breakfast from 8:00 to 10:00 a.m.",
+   "We are looking forward upon your arrival between 5:00 p.m. and 8:00 p.m. Please note that we charge additional 20 € per hour for a check-in after 8:00 p.m. without prior notification or agreement, past 10:00 p.m. an arrival is not possible. Our check-out time is 9:00 to 10:30 a.m.",
+   "Kids: Up to the age of three they are free of charge; the four, five and six year old relish their stay for only 15 € per night. All kids which are four to nine years old get a discount of 4 € per day at our breakfast.",
+   "Car parking is a matter of course. You have a bigger vehicle than a usual car? Please let us know in advance so we can keep an appropriate parking space. A trailer is charged with an extra fee of 3 € per day.",
+   "Inside our house as well as inside all closed rooms smoking is completely forbidden. Please use the balcony or one of our the terraces and simultanously take advantage of the great view and the fresh air South Tyrol has to provide.",
+   "Unfortunately, all your pets have to stay at home – we are keeping free-range chicken at our farm and we own dogs, cats and other small animals which are not used to foreign animals.",
+   "In the event of a short-notice cancellation fewer than 14 days and non-arrival or early departure, a minimum of 100 % of the cost of the (remaining) holiday will be invoiced.",
+   "Room cleaning: On Sundays, rooms are only cleaned upon request.",
+   "Towels are changed every 3 days. For extra changes we applies a charge."
+  ],
+  "actIntro": [
+   "No matter how restful and relaxing your holiday will be at Brandlgut, you definitively don't want to miss the art and culture, the variety of sporting opportunities or the culinary highlights of Bolzano and South Tyrol.",
+   "Tap or click on the pictures below – we have gathered some valuable tips for your stay. Please enquire about seasonal opening hours if necessary."
+  ],
+  "activities": [
+   {
+    "id": "kunst",
+    "title": "art & culture",
+    "items": [
+     {
+      "name": "South Tyrol Museum of Archaeology",
+      "meta": "4 km",
+      "text": "See \"Ötzi\" live and find out more about this unique criminal story.",
+      "link": null
+     },
+     {
+      "name": "Messner Mountain Museum in Sigmundskron Castle",
+      "meta": "5 km",
+      "text": "Undertake a journey on the trails of the famous South Tyrolean mountaineer Reinhold Messner.",
+      "link": null
+     },
+     {
+      "name": "Trautmannsdorf Castle – Merano",
+      "meta": "23 km",
+      "text": "Stroll through the botanical garden and visit the Touriseum.",
+      "link": null
+     },
+     {
+      "name": "Muri-Gries Benedictine Monastery",
+      "meta": "3 km",
+      "text": "The monastery from 1845 impresses its visitors with breathtaking frescoes.",
+      "link": null
+     },
+     {
+      "name": "Old parish church of Gries",
+      "meta": "4 km",
+      "text": "This Roman Catholic Church was built in late-Gothic style.",
+      "link": null
+     },
+     {
+      "name": "Mercantile Museum and Mercantile Building",
+      "meta": "4 km",
+      "text": "Learn more about the economic history of Bolzano and South Tyrol.",
+      "link": null
+     },
+     {
+      "name": "Museum of Modern and Contemporary Art – Museion",
+      "meta": "5 km",
+      "text": "The Museion houses an extensive collection in modern ambience.",
+      "link": null
+     },
+     {
+      "name": "South Tyrol Museum of Natural History",
+      "meta": "6 km",
+      "text": "You will find out everything about the formation history of the South Tyrolean Alps and many more.",
+      "link": null
+     },
+     {
+      "name": "\"Busoni-Competition\" – Ferruccio Busoni International Piano Competition",
+      "meta": "5 km",
+      "text": "This is a summery-musical must-see.",
+      "link": null
+     }
+    ]
+   },
+   {
+    "id": "freizeit",
+    "title": "Leisure",
+    "items": [
+     {
+      "name": "Lake Caldaro",
+      "meta": "17 km",
+      "text": "You will relax here while swimming, fishing or pedalo riding surrounded by vineyards.",
+      "link": null
+     },
+     {
+      "name": "Montiggl Lakes",
+      "meta": "13 km",
+      "text": "Those lakes are hidden in the woods and invite you to go for a walk or sunbathing.",
+      "link": null
+     },
+     {
+      "name": "Lido di Bolzano – open-air pool Bolzano",
+      "meta": "5 km",
+      "text": "For all who want to swim length we recommend our open-air pool, including a children's pool.",
+      "link": null
+     },
+     {
+      "name": "Gargazon natural bath",
+      "meta": "13 km",
+      "text": "Perfectly happy guarantee: Swimming in naturally infested waters, children's pool, fun pool, volleyball, kicker and many more.",
+      "link": null
+     },
+     {
+      "name": "Terme Merano",
+      "meta": "26 km",
+      "text": "You are looking for relaxation with Spa and Sauna as well as various relaxation pools – then this is your place to go!",
+      "link": null
+     },
+     {
+      "name": "High rope climbing garden Xsund – Terlan",
+      "meta": "5 km",
+      "text": "On five different level of difficulty you can challenge yourself – trust yourself, you'll make it!",
+      "link": null
+     },
+     {
+      "name": "3D archery Xsund – Terlan",
+      "meta": "5 km",
+      "text": "An experience for the whole family which will be a fun afternoon for beginners and kids.",
+      "link": null
+     },
+     {
+      "name": "Minigolf Tramin",
+      "meta": "23 km",
+      "text": "Their special offer: here you can golf at night – daily from 11:00 a.m. till midnight.",
+      "link": null
+     }
+    ]
+   },
+   {
+    "id": "essen",
+    "title": "wining & dining",
+    "items": [
+     {
+      "name": "Restaurant \"Moosbauer\"",
+      "meta": "Within walking distance",
+      "text": "Even though this restaurant is on a campsite it offers a surprising cosy atmosphere and above all very good italian food.",
+      "link": null
+     },
+     {
+      "name": "Panorama restaurant \"Leitenschenke\"",
+      "meta": "25 km",
+      "text": "Definitely the best dumplings of South Tyrol, homemade by a sympathetic family business – one of our personal favorite places with a gigantic view on top!",
+      "link": null
+     },
+     {
+      "name": "Haselburg",
+      "meta": "8 km",
+      "text": "High above Bolzano, with a great view of the valley – we highly recommend to go there at sunset (make sure you have a reservation!).",
+      "link": null
+     },
+     {
+      "name": "Fish farm and restaurant \"Krebsbach\"",
+      "meta": "16 km",
+      "text": "Optionally catch your fish or crab yourself before you enjoy eating it.",
+      "link": null
+     },
+     {
+      "name": "Patisserie and cafe \"Peter Paul\"",
+      "meta": "8 km",
+      "text": "Cake and tortes – best of the best.",
+      "link": null
+     },
+     {
+      "name": "Tavern \"Zum Falken\"",
+      "meta": "8 km",
+      "text": "We recommend the weekly new Tyrolean Tris, a classic South Tyrolean dish.",
+      "link": null
+     }
+    ]
+   },
+   {
+    "id": "wandern",
+    "title": "Hiking",
+    "items": [
+     {
+      "name": "Monzoccolo (Tschögglberg)",
+      "meta": "",
+      "text": "The hiking trail leads along past our farm, it is the perfect entry so to say.",
+      "link": null
+     },
+     {
+      "name": "Lungo Talvera Walks",
+      "meta": "",
+      "text": "Lungo Talvera is the name of \"our\" river. If you walk along you will discover the Runkelstein Castle and Castel Mareccio.",
+      "link": null
+     },
+     {
+      "name": "Sciliar (Schlern)",
+      "meta": "25 km",
+      "text": "All around the mountain Sciliar there are a variety of hiking trails. We recommend to start your tour from the parking lot at Pond of Fiè (Völser Weiher).",
+      "link": null
+     },
+     {
+      "name": "San Genesio (Jenesien)",
+      "meta": "14 km",
+      "text": "The European distant hiking route E5 passes by this lovely village, there is a ropeway connection directly from Bolzano.",
+      "link": null
+     },
+     {
+      "name": "High Plateau of Renon (Ritten)",
+      "meta": "17 km",
+      "text": "Explore the well-known Renon earth pyramids, for example in Soprabolzano (Oberbozen) or Longomoso (Lengmoos).",
+      "link": null
+     },
+     {
+      "name": "Waalwege Trails Lana",
+      "meta": "18 km",
+      "text": "Those particularly easy hiking trails take you alongside old waterways which have been used to irrigate the land and vineyards.",
+      "link": null
+     },
+     {
+      "name": "Stieber Waterfall",
+      "meta": "55 km",
+      "text": "Starting from the parking lot at Moso (Moos) there is a forest path on the left which will guide you to the waterfall – just follow the \"whoosh\" sound.",
+      "link": null
+     }
+    ]
+   },
+   {
+    "id": "winter",
+    "title": "Winter sports",
+    "items": [
+     {
+      "name": "Reinswald, Sarntal Valley",
+      "meta": "38 km",
+      "text": "4 lifts, 21 km ski slope, ski tours and snowpark",
+      "link": {
+       "href": "https://www.sarntal.com/en/mountain-railway/ski-area-reinswald/lifts-prices-slopes.html",
+       "label": "more information"
+      }
+     },
+     {
+      "name": "Corno del Renon (Rittner Horn)",
+      "meta": "35 km",
+      "text": "3 lifts, 15 km ski slope, cross-country ski trail, toboggan and winter hiking trails",
+      "link": {
+       "href": "https://www.ritten.com/en/highplateau/corno-del-renon/lifts-ski-runs.html",
+       "label": "more information"
+      }
+     },
+     {
+      "name": "Obereggen, Latemar",
+      "meta": "34 km",
+      "text": "18 lifts, 48 km ski slope, 2 toboggan runs and snowpark",
+      "link": {
+       "href": "https://obereggen.com/en/Winter/Ski-area",
+       "label": "more information"
+      }
+     },
+     {
+      "name": "Carezza (Karersee)",
+      "meta": "25 km",
+      "text": "15 lifts, 40 km ski slope, 4 toboggan runs, 16 km cross-country ski trails and snow-funpark",
+      "link": {
+       "href": "https://carezza.it/en",
+       "label": "more information"
+      }
+     },
+     {
+      "name": "Val Gardena (Gröden)",
+      "meta": "50 km",
+      "text": "34 lifts, 115 km ski slope, toboggan run and 133 km cross-country ski trails",
+      "link": {
+       "href": "https://www.dolomitisuperski.com/en/ski-area/val-gardena",
+       "label": "more information"
+      }
+     },
+     {
+      "name": "Seiser Alm",
+      "meta": "27 km",
+      "text": "21 lifts, 60 km ski slope, 60 km cross-country ski trails and funpark",
+      "link": {
+       "href": "https://www.dolomitisuperski.com/en/ski-area/alpe-di-siusi",
+       "label": "more information"
+      }
+     },
+     {
+      "name": "Meran 2000",
+      "meta": "28 km",
+      "text": "8 lifts, 40 km ski slope, 2 toboggan runs and cross-country ski trails",
+      "link": {
+       "href": "https://www.meran2000.com/en/winter/",
+       "label": "more information"
+      }
+     }
+    ]
+   },
+   {
+    "id": "markt",
+    "title": "markets",
+    "items": [
+     {
+      "name": "Weekly market Bolzano",
+      "meta": "Saturdays until 2:00 p.m., Siegesplatz",
+      "text": "All your heart desires: sausage, cheese, meat, fish, fruits und vegetables – organic or conventional.",
+      "link": null
+     },
+     {
+      "name": "Organic farmers market Bolzano",
+      "meta": "Tuesdays 7:30 a.m. – 1:00 p.m., Rathausplatz",
+      "text": "Regional, organic, in person.",
+      "link": null
+     },
+     {
+      "name": "Farmers market Bolzano",
+      "meta": "Tuesdays Mazziniplatz and fridays Rathausplatz",
+      "text": "Here you will find everything of the region.",
+      "link": null
+     },
+     {
+      "name": "Traditional Flower Show Bolzano",
+      "meta": "Around 1st of May, Waltherplatz",
+      "text": "Special flowers and arrangements will only be found on this lovely market.",
+      "link": null
+     },
+     {
+      "name": "Christmas market",
+      "meta": "Late November – beginning of January, Waltherplatz",
+      "text": "Christmas spirit, a craft market and the mandatory mulled wine will tempt you during this contemplative time.",
+      "link": null
+     },
+     {
+      "name": "Spring market",
+      "meta": "Late March, Waltherplatz",
+      "text": "The spring awakening will be celebrated with the entire family.",
+      "link": null
+     }
+    ]
+   }
+  ],
+  "imprint": "<p><strong>Responsibility for the contents (author):</strong></p> <p>Brandlgut SAS</p> <p>di Gasser Anton – Soc. Agr.</p> <p>Via San Maurizio, 63</p> <p>39100 Bolzano, Italia</p>  <p>Tel: +39 349 2134607</p> <p>E-Mail: <a href=\"mailto:info@brandlgut.com\" rel=\"noopener\">info@brandlgut.com</a></p> <p>P.IVA: IT02515480214</p> <p>CIN: IT021008B5UCN4TZUS</p>  <h2>Online Dispute Resolution:</h2> <p>Mandatory information according to the EU-Regulation N. 524/2013 of the European Parliament and of the Council Platform for online dispute resolution for consumer disputes (ODR) to the European Commission: <a href=\"http://ec.europa.eu/consumers/odr/\" rel=\"noopener\">http://ec.europa.eu/consumers/odr/</a></p>  <p><strong>INTERNET</strong></p> <p><strong>Design &amp; photographie</strong></p> <p>Andreas Steffan – <a href=\"http://www.andreassteffan.com\" rel=\"noopener\">www.andreassteffan.com</a></p> <p><strong>Realization<br> </strong>Frank Seidel – <a href=\"http://www.fhseidel.de\" rel=\"noopener\">www.fhseidel.de</a></p>  <p>Powered by CMSimple_XH – <a href=\"http://www.cmsimple-xh.org\" rel=\"noopener\">www.cmsimple-xh.org</a></p>",
+  "privacy": "<p><strong>Compliance with the legal information requirements pursuant to the European General Data Protection Regulation (EU GDPR)</strong></p> <p>We are hereby informing you about the type, scope and purpose of data collection and use of your personal data. The person responsible for data processing is: <strong>Brandlgut SAS di Gasser Anton – Soc. Agr. - Via San Maurizio 63 – 39100 Bolz</strong><strong>ano</strong> , in the person of the legal representative: <strong>Gasser Anton</strong>, who may be contact by the following means: tel. <strong>0039 349 2134607</strong> + E-Mail: <strong>info@brandlgut.com</strong></p> <p>Pursuant to Art. 13 of the European General Data Protection Regulation, we process the following data:</p> <ul> <li>your basic data (first name, surname, address, telephone, email, date of birth, place of birth, language etc.)</li> <li>data contained in your travel documents and identity cards</li> <li>data on payments you have made, EC cards, credit cards and bank cards you hold</li> <li>the period of stay you have requested as well as your preferences associated with your stay</li> </ul> <p>The data are saved, processed and, inasfar as prescribed by law, passed on to third parties (e.g. public authorities, tourist boards etc.) for the purpose of providing our services.</p> <p>Your data are not passed on to third countries.</p> <p>Should you refuse to release basic data, travel document data and bank data, it will not be possible to fulfil the contractual obligations and accommodate you at our establishment.</p> <p>We do not apply profiling and automated decisions.</p> <p>The legal basis for data processing is the following:</p> <ul> <li>the fulfillment of our pre-contractual and contractual duties towards you</li> <li>your provided consent</li> <li>legal, contractual or other legitimate duties on our part (e.g. documentation regulations and duties concerning accounting, tax and customs law, contracts, registration, or legal disputes)</li> <li>our authorised interests (e.g. improving our customer service, also when it comes to direct marketing or our perceived legal interests).</li> </ul> <p>The duration that data are saved is calculated according to the duration of our business relationhip, the consent provided by you, as well as our duties regarding data storage and legal requirements.</p> <p>You can ask for your personal data saved by us to be disclosed free of charge at any time. As the party concerned, you can also exercise the right to withdrawal, disclosure, deletion, rectification, restriction and transfer of your personal data, as long as no obligation to store them on our part opposes that right. On exercising your right to withdrawal, all of your data will be irreversibly deleted, as long as no overriding legal requirements are breached.</p> <p>For further information on your rights as the concerned party, please contact us at <strong>info@brandlgut.com</strong>.<br> We will be happy to help you. The supervisory authority “Garante per la protezione dei dati personali“ is responsible for complaints: Piazza di Monte Citorio n. 121 00186 ROMA, fax: (+39) 06.69677.3785, telephone: (+39) 06.696771, email: garante@gpdp.it.</p> <h2>Cookies</h2> <p>A cookie is a small file of letters and numbers downloaded on to your computer when you access certain websites. Cookies allow a website to recognise a user’s computer. Cookies themselves do not require personal information to be useful and, in most cases, do not personally identify internet users.</p> <p>Cookies may be used for behavioral advertising to create profiles about the surfing behavior of users.</p> <ul> <li><a href=\"http://en.wikipedia.org/wiki/HTTP_cookie\" rel=\"noopener\">More information about cookies on Wikipedia</a></li> <li><a href=\"http://www.garanteprivacy.it/cookie\" rel=\"noopener\">A guide to cookies on the side of the \"Garante per la Protezione dei dati personali\"</a></li> </ul> <p>This website uses technical cookies for navigation, function and improving performance of the site and allow third party cookies. These third-party cookies could be technical cookies and profiling cookies for statistics and for data collection in order to send the user advertising messages, which interest him (cookies for marketing and retargeting purposes).</p> <p>Users can disable cookies.</p> <p><strong>Attention</strong>, if you choose to disable or reject cookies, you may not have access to some parts of the site.</p> <p>To turn off or decline cookies consult these links:</p> <p><strong>To disable cookies in the most common browsers:</strong></p> <ul> <li><a href=\"https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences\" rel=\"noopener\">Mozilla Firefox</a></li> <li><a href=\"http://windows.microsoft.com/en-us/internet-explorer/delete-manage-cookies\" rel=\"noopener\">Windows Internet Explorer</a></li> <li><a href=\"https://support.google.com/chrome/answer/95647?hl=en\" rel=\"noopener\">Google Chrome</a></li> <li><a href=\"http://help.opera.com/Windows/10.00/en/cookies.html\" rel=\"noopener\">Opera</a></li> <li><a href=\"https://support.apple.com/en-us/HT201265\" rel=\"noopener\">Apple Safari</a></li> </ul> <p><strong>Information pages of third-party about their cookies:</strong></p> <ul> <li><a href=\"http://www.google.com/intl/en/policies/\" rel=\"noopener\">Google</a></li> <li><a href=\"http://www.google.com/intl/en/policies/technologies/cookies/\" rel=\"noopener\">Google Analytics</a></li> <li><a href=\"http://www.google.com/intl/en/policies/technologies/cookies/\" rel=\"noopener\">Youtube</a></li> <li><a href=\"http://www.google.com/intl/en/policies/technologies/cookies/\" rel=\"noopener\">Google Maps</a></li> <li><a href=\"http://policies.peer.biz/en/cookies-for-widgets/\" rel=\"noopener\">Peer</a></li> </ul> <p>More information on how you can deactivated and / or deleted third-party cookies you can found on the website of the European Interactive Digital Advertising Alliance: <a href=\"http://www.youronlinechoices.eu/\" rel=\"noopener\">www.youronlinechoices.eu</a>.</p> <h2>Logfiles</h2> <p>Each time our website is accessed, our system automatically collects data and information from the computer system of the calling computer. The following data are collected here:</p> <ul> <li>Information about the browser type and version used</li> <li>The operating system of the user</li> <li>The Internet service provider of the user</li> <li>The IP address of the user</li> <li>Date and time of access</li> <li>Websites from which the system of the user comes to our website</li> <li>Websites that are accessed by the user's system through our website</li> </ul> <p>Storage in log files is done to ensure the functionality of the website. In addition, the data is used to optimize the website and to ensure the security of our information technology systems. An evaluation of the data for marketing purposes does not take place in this context.</p> <p>For these purposes the processing of this data is our legitimate interest in according to Art. 6 para. 1 sentence 1 lit. f. GDPR.</p> <p>The data will be deleted as soon as it is no longer necessary for the purpose of its collection.</p> <p><strong>Google Analytics</strong></p> <p>This website uses Google Analytics, a web analytics service provided by Google, Inc. (“Google”). Google Analytics uses “cookies”, which are text files placed on your computer, to help the website analyze how users use the site. The information generated by the cookie about your use of the website will be transmitted to and stored by Google on servers in the United States.</p> <p>In case IP-anonymisation is activated on this website, your IP address will be truncated within the area of Member States of the European Union or other parties to the Agreement on the European Economic Area. Only in exceptional cases the whole IP address will be first transfered to a Google server in the USA and truncated there. The IP-anonymisation is active on this website.<br> <br> Google will use this information on behalf of the operator of this website for the purpose of evaluating your use of the website, compiling reports on website activity for website operators and providing them other services relating to website activity and internet usage.<br> <br> The IP-address, that your Browser conveys within the scope of Google Analytics, will not be associated with any other data held by Google. You may refuse the use of cookies by selecting the appropriate settings on your browser, however please note that if you do this you may not be able to use the full functionality of this website. You can also opt-out from being tracked by Google Analytics with effect for the future by downloading and installing Google Analytics Opt-out Browser Addon for your current web browser: <a href=\"http://tools.google.com/dlpage/gaoptout?hl=en\" rel=\"noopener\">http://tools.google.com/dlpage/gaoptout?hl=en</a></p>"
+ },
+ "it": {
+  "farm": [
+   "Il maso Brandlgut venne costruito nel 19º secolo e dal 2006 è sotto la gestione della nostra famiglia. In seguito ai lavori di ristrutturazione e modernizzazione della struttura, dal luglio 2016 sono numerosi gli ospiti che soggiornano nelle camere da noi ideate e rinnovate. Il maso sorge in un vigneto di 2 ettari, una zona privilegiata dove nelle migliori condizioni viene coltivata l'uva che dà origine al vino rosso Lagrein.",
+   "Una piccola zona del nostro maso è anche dedicata alla coltivazione di frutta (p.e. mele, pere, ciliege) e verdura (p.e. cetrioli, zucche, pomodori). Oltre a soddisfare il nostro fabbisogno quotidiano, questi prodotti freschi e di stagione possono essere gustati anche dai nostri ospiti. Non mancano, ovviamente, le uova delle nostre galline, servite fresche ogni giorno a colazione. Grande importanza viene data all'assistenza e ai rapporti con i nostri ospiti: questo accade in particolare la mattina nella sala colazioni (costruita interamente in legno di abete) davanti a un buon caffè, pane fresco e prelibatezze locali.",
+   "Terrazza e giardino sono i luoghi ideali in cui godersi un po' di relax con vista panoramica sulla città e i suoi paesaggi naturali limitrofi.",
+   "Il divertimento è assicurato per i nostri ospiti più piccoli: a loro è dedicata un'apposita area giochi con sabbiera e altalena. Senza dimenticare la compagnia di Thila e Mira, due simpatici cani pronti a giocare con voi.",
+   "Desiderate sapere qualcosa di più sul lavoro del viticoltore? Non esitate a chiedere e saremo lieti di illustrarvi i segreti del mestiere."
+  ],
+  "policies": [
+   "I prezzi dipendono da tipologia di camera e numero di notti (minimo 3). La colazione non è inclusa nel listino prezzi delle camere. A 18€ per persona al giorno è possibile gustare la nostra colazione dalle ore 8.00 alle ore 10.00.",
+   "Siamo lieti di accogliere il vostro arrivo tra le ore 17.00 e le ore 20.00, a cui seguirà il check-in. In caso di arrivo dopo l'orario di accoglienza non prontamente segnalato, verrà applicata una piccola tariffa aggiuntiva di 20€ per ogni ora di ritardo. Dopo le ore 22.00 non sarà più possibile accogliere i nuovi ospiti. Dalle ore 9.00 alle ore 10.30 sarà possibile effettuare il check-out.",
+   "Bambini: fino ai 3 anni il pernottamento è gratuito. Dai 4 ai 6 anni la tariffa è di 15€ a notte. Uno sconto di 4€ verrà applicato alla colazione dei bimbi dai 4 ai 9 anni, mentre saranno gratuite le colazioni dei bambini sotto i 3 anni.",
+   "Un posto macchina è garantito. Per veicoli di grandi dimensioni raccomandiamo di avvertirci prima dell'arrivo, così da mettere a disposizione un parcheggio adeguato. Alle vetture dotate di rimorchio verrà applicata una tariffa aggiuntiva di 3€ al giorno.",
+   "All'interno della struttura e delle camere è assolutamente vietato fumare. Usufruite quindi del balcone o della terrazza e godetevi il panorama circostante.",
+   "La struttura accoglie già i nostri cani, gatti, galline e altri simpatici animali. Pertanto, con nostro grande dispiacere, i vostri animali domestici dovranno rimanere a casa.",
+   "In caso di disdetta a breve termine nei 14 giorni che precedono l'arrivo e di no-show o di partenza anticipata verrá addebitato il 100 % della quota di soggiorno per i giorni restanti e/o non goduti.",
+   "Pulizia delle camere: Le domenice le camere vengono pulite solo su richiesta.",
+   "Gli asciugamani vengono cambiati ogni 3 giorni. Il cambio anticipato o giornaliero prevede un supplemento."
+  ],
+  "actIntro": [
+   "Oltre ad un lieto ed indimenticabile soggiorno al maso Brandlgut, non lasciatevi sfuggire le molteplici attività ed eventi artistici, culturali, sportivi o le specialità culinarie bolzanine e dell'intero Alto Adige.",
+   "Abbiamo raccolto alcuni suggerimenti che potete scoprire con un semplice click sulle relative icone. Si prega di informarsi sugli orari di apertura stagionali."
+  ],
+  "activities": [
+   {
+    "id": "kunst",
+    "title": "Arte e cultura",
+    "items": [
+     {
+      "name": "Museo Archeologico dell'Alto Adige",
+      "meta": "4 km",
+      "text": "Ammira \"Ötzi\" dal vivo e scopri tutti i segreti del famoso uomo dei ghiacci.",
+      "link": null
+     },
+     {
+      "name": "Messner Mountain Museum a Castel Firmiano",
+      "meta": "5 km",
+      "text": "Segui le orme del celebre alpinista altoatesino Reinhold Messner.",
+      "link": null
+     },
+     {
+      "name": "Castel Trauttmansdorff a Merano",
+      "meta": "23 km",
+      "text": "Scopri il giardino botanico e visita il Touriseum.",
+      "link": null
+     },
+     {
+      "name": "Abbazia di Muri-Gries",
+      "meta": "3 km",
+      "text": "l'abbazia del 1845 espone affreschi mozzafiato.",
+      "link": null
+     },
+     {
+      "name": "Vecchia Parrocchiale di Gries",
+      "meta": "4 km",
+      "text": "Una chiesa cattolica romana costruita in stile tardo gotico.",
+      "link": null
+     },
+     {
+      "name": "Museo e Palazzo Mercantile",
+      "meta": "4 km",
+      "text": "Alla scoperta della storia economica di Bolzano e dell'Alto Adige.",
+      "link": null
+     },
+     {
+      "name": "Museion: museo di arte moderna e contemporanea",
+      "meta": "5 km",
+      "text": "Museion ospita una vasta collezione di opere in un ambiente moderno.",
+      "link": null
+     },
+     {
+      "name": "Museo di Scienze Naturali dell'Alto Adige",
+      "meta": "6 km",
+      "text": "Qui puoi scoprire tutto sulle origini delle Alpi altoatesine e molto altro.",
+      "link": null
+     },
+     {
+      "name": "Concorso pianistico internazionale F. Busoni",
+      "meta": "5 km",
+      "text": "In estate questo evento musicale è un must.",
+      "link": null
+     }
+    ]
+   },
+   {
+    "id": "freizeit",
+    "title": "Tempo libero",
+    "items": [
+     {
+      "name": "Lago di Caldaro",
+      "meta": "17 km",
+      "text": "Situato tra i vigneti, in questo lago è possibile rilassarsi con una nuotata, andare a pesca o scorrazzare col pedalò.",
+      "link": null
+     },
+     {
+      "name": "Laghi di Monticolo",
+      "meta": "13 km",
+      "text": "Questi laghi immersi nei boschi sono un luogo ideale per passeggiate e bagni estivi.",
+      "link": null
+     },
+     {
+      "name": "Lido di Bolzano",
+      "meta": "5 km",
+      "text": "Nelle giornate estive più calde, un bagno in piscina è sempre gradito.",
+      "link": null
+     },
+     {
+      "name": "Piscina naturale di Gargazzone",
+      "meta": "13 km",
+      "text": "Nuoto in acque naturali, piscine per bambini, pallavolo, calcio balilla e molto altro.",
+      "link": null
+     },
+     {
+      "name": "Terme di Merano",
+      "meta": "26 km",
+      "text": "Se siete in cerca di relax, di un centro benessere con sauna e varie piscine rilassanti, siete nel posto giusto!",
+      "link": null
+     },
+     {
+      "name": "Percorso Alta Fune Xsund a Terlano",
+      "meta": "5 km",
+      "text": "Più di 5 livelli di difficoltà per metterti alla prova.",
+      "link": null
+     },
+     {
+      "name": "Percorso Tiro con l'arco Xsund a Terlano",
+      "meta": "5 km",
+      "text": "Un'esperienza per tutta la famiglia, che diventa divertimento pomeridiano per principianti e bambini.",
+      "link": null
+     },
+     {
+      "name": "Minigolf a Termeno",
+      "meta": "23 km",
+      "text": "Per una partita di golf anche di notte - aperto ogni giorno dalle 11.00 fino a 00.00.",
+      "link": null
+     }
+    ]
+   },
+   {
+    "id": "essen",
+    "title": "Gastronomia",
+    "items": [
+     {
+      "name": "Ristorante Moosbauer",
+      "meta": "In Laufweite",
+      "text": "Sebbene il ristorante Moosbauer appartenga ad un campeggio, offre un'atmosfera accogliente e, soprattutto, ottimo cibo italiano.",
+      "link": null
+     },
+     {
+      "name": "Ristorante panoramico Leitenschenke",
+      "meta": "25 km",
+      "text": "Ristorante a conduzione familiare che offre i migliori canederli dell' Alto Adige - uno dei nostri luoghi preferiti caratterizzato da una vista magnifica!",
+      "link": null
+     },
+     {
+      "name": "Haselburg",
+      "meta": "8 km",
+      "text": "Situato sopra Bolzano, offre la migliore vista sul fondovalle, altamente raccomandato al tramonto (prenotazione consigliata).",
+      "link": null
+     },
+     {
+      "name": "Allevamento ittico e ristorante Krebsbach",
+      "meta": "16 km",
+      "text": "Pescare un pesce o un granchio e gustarsi il proprio bottino a tavola.",
+      "link": null
+     },
+     {
+      "name": "Pasticceria e Café Peter Paul",
+      "meta": "8 km",
+      "text": "Dolci e torte per un gusto delizioso e raffinato.",
+      "link": null
+     },
+     {
+      "name": "Locanda Zum Falken",
+      "meta": "8 km",
+      "text": "Consigliamo il Tris Tirolese, ogni settimana diverso e sempre delizioso. Un classico della cucina altoatesina.",
+      "link": null
+     }
+    ]
+   },
+   {
+    "id": "wandern",
+    "title": "Escursioni",
+    "items": [
+     {
+      "name": "Tschögglberg (Monzoccolo)",
+      "meta": "",
+      "text": "Il sentiero è vicino al nostro maso. Punto di partenza ideale.",
+      "link": null
+     },
+     {
+      "name": "Passeggiate del Talvera",
+      "meta": "",
+      "text": "Il Talvera è il \"nostro\" torrente. Se percorri le sue passeggiate, scoprirai i castelli Roncolo e Mareccio.",
+      "link": null
+     },
+     {
+      "name": "Sciliar",
+      "meta": "25 km",
+      "text": "Il monte Sciliar dispone di numerosi sentieri escursionistici. Consigliamo il parcheggio al Lago di Fiè come punto di partenza.",
+      "link": null
+     },
+     {
+      "name": "San Genesio",
+      "meta": "14 km",
+      "text": "• Il sentiero escursionistico europeo E5 attraversa il paese. Esiste un collegamento con la funivia direttamente da Bolzano.",
+      "link": null
+     },
+     {
+      "name": "Altopiano del Renon",
+      "meta": "17 km",
+      "text": "Scopri le famose piramidi di terra sul Renon, ad esempio a Soprabolzano o Longomoso.",
+      "link": null
+     },
+     {
+      "name": "I Waalwege di Lana",
+      "meta": "18 km",
+      "text": "Questi facili sentieri escursionistici conducono lungo antichi corsi d'acqua che venivano utilizzati per irrigare i campi e i vigneti.",
+      "link": null
+     },
+     {
+      "name": "Bletterbach",
+      "meta": "55 km",
+      "text": "Nel comune di Aldino, un canyon e vari sentieri di eccezionale interesse geologico. Patrimonio dell'Unesco.",
+      "link": null
+     }
+    ]
+   },
+   {
+    "id": "winter",
+    "title": "Sport invernali",
+    "items": [
+     {
+      "name": "Reinswald, Val Sarentino",
+      "meta": "38 km",
+      "text": "4 impianti di risalita, 21 km di piste da sci, sci-alpinismo e snowpark",
+      "link": {
+       "href": "https://www.sarntal.com/",
+       "label": "Informazioni"
+      }
+     },
+     {
+      "name": "Corno del Renon",
+      "meta": "35 km",
+      "text": "3 impianti di risalita, 15 km di piste da sci, piste da fondo, pista per slittino e sentieri per escursioni sulla neve",
+      "link": {
+       "href": "https://www.ritten.com/",
+       "label": "Informazioni"
+      }
+     },
+     {
+      "name": "Obereggen, Latemar",
+      "meta": "34 km",
+      "text": "18 impianti di risalita, 48 km di piste da sci, 2 piste per slittino e snowpark",
+      "link": {
+       "href": "https://obereggen.com/",
+       "label": "Informazioni"
+      }
+     },
+     {
+      "name": "Carezza",
+      "meta": "25 km",
+      "text": "15 impianti di risalita, 40 km di piste da sci, 4 piste per slittino, 16 km di piste da fondo e snowfunpark",
+      "link": {
+       "href": "https://carezza.it/",
+       "label": "Informazioni"
+      }
+     },
+     {
+      "name": "Val Gardena",
+      "meta": "50 km",
+      "text": "34 impianti di risalita, 115 km di piste da sci, pista per slittino e 133 km di piste da fondo",
+      "link": {
+       "href": "https://www.dolomitisuperski.com/",
+       "label": "Informazioni"
+      }
+     },
+     {
+      "name": "Alpe di Siusi",
+      "meta": "27 km",
+      "text": "21 impianti di risalita, 60 km di piste da sci, 60 km di piste da fondo e parkfun.",
+      "link": {
+       "href": "https://www.dolomitisuperski.com/",
+       "label": "Informazioni"
+      }
+     },
+     {
+      "name": "Merano 2000",
+      "meta": "28 km",
+      "text": "8 impianti di risalita, 40 km di piste da sci, 2 piste per slittino e per sci di fondo",
+      "link": {
+       "href": "https://www.meran2000.com/winter/",
+       "label": "Informazioni"
+      }
+     }
+    ]
+   },
+   {
+    "id": "markt",
+    "title": "Mercati",
+    "items": [
+     {
+      "name": "Mercato del Sabato",
+      "meta": "ogni Sabato fino alle 14:00, Piazza della Vittoria",
+      "text": "Tutto ciò che puoi desiderare: scarpe, vestiti e ovviamente cibo (formaggio, carne, pesce, frutta e verdura).",
+      "link": null
+     },
+     {
+      "name": "Mercato biologico del contadino",
+      "meta": "Martedì 7:30 - 13:00, Piazza del Municipio",
+      "text": "Regionale, biologico, a diretto contatto con i contadini.",
+      "link": null
+     },
+     {
+      "name": "Mercato del contadino",
+      "meta": "Martedì Piazza Mazzini e Venerdì Piazza del Municipio",
+      "text": "Prodotti esclusivamente regionali.",
+      "link": null
+     },
+     {
+      "name": "Mercato dei fiori",
+      "meta": "Ogni anno il 1° maggio, Piazza Walther",
+      "text": "Solo qui è possibile trovare i più bei fiori e composizioni floreali speciali.",
+      "link": null
+     },
+     {
+      "name": "Mercatino di Natale",
+      "meta": "Fine novembre - inizio gennaio, Piazza Walther",
+      "text": "Lo spirito natalizio, un mercatino dell'artigianato e il vin brûlé obbligatorio. Tutto questo nel periodo in cui tutti sono più buoni.",
+      "link": null
+     },
+     {
+      "name": "Mercato di primavera",
+      "meta": "Sempre alla fine di marzo, Piazza Walther",
+      "text": "Il risveglio primaverile viene celebrato con tutta la famiglia.",
+      "link": null
+     }
+    ]
+   }
+  ],
+  "imprint": "<p>Brandlgut SAS</p> <p>di Gasser Anton – Soc. Agr.</p> <p>Via San Maurizio 63</p> <p>39100 Bolzano, Italia</p>  <p>Tel: +39 349 2134607</p> <p>E-Mail: <a href=\"mailto:info@brandlgut.com\" rel=\"noopener\">info@brandlgut.com</a></p> <p>P.IVA: IT02515480214</p> <p>CIN: IT021008B5UCN4TZUS</p>  <p>Risoluzione online delle controversie:</p> <p>Informazione obbligatoria ai sensi del Regolamento UE n. 524/2016 del Parlamento europeo e del Consiglio Piattaforma per la risoluzione delle controversie online dei consumatori (ODR) della Commissione europea: <a href=\"http://ec.europa.eu/consumers/odr/\" rel=\"noopener\">http://ec.europa.eu/consumers/odr/</a></p>  <p><strong>INTERNET</strong></p> <p><strong>Design &amp; fotografia</strong></p> <p>Andreas Steffan – <a href=\"http://www.andreassteffan.com\" rel=\"noopener\">www.andreassteffan.com</a></p> <p><strong>Realizzazione<br> </strong>Frank Seidel – <a href=\"http://www.fhseidel.de\" rel=\"noopener\">www.fhseidel.de</a></p>  <p>Powered by CMSimple_XH – <a href=\"http://www.cmsimple-xh.org\" rel=\"noopener\">www.cmsimple-xh.org</a></p>",
+  "privacy": "<p><strong>Regolamento Generale sulla Protezione dei Dati (RGPD)</strong></p> <p>Con la presente Le diamo conto della natura, della portata e dello scopo della raccolta e dell'uso dei Suoi dati personali. Responsabile del trattamento dei dati è: <strong>Brandlgut SAS di Gasser Anton - Soc. Agr. – Via San Maurizio 63 – 39100 Bolz</strong><strong>ano</strong> in persona del legale rappresentante: <strong>Anton Gasser</strong>, contattabile ai seguenti recapiti: Tel. <strong>0039 349 2134607</strong> + E-Mail: <strong>info@</strong><strong>brandlgut.com</strong></p> <p>Ai sensi dell'articolo 13 del Regolamento Generale sulla Protezione dei Dati, tratteremo le seguenti informazioni:</p> <ul> <li>Dati anagrafici (nome, cognome, indirizzo, telefono, e-mail, data di nascita, luogo di nascita, lingua ecc.)</li> <li>Dati presenti nei documenti di viaggio e d’identità</li> <li>Dati relativi a pagamenti, carte di debito, carte di credito e carte bancarie</li> <li>La durata del soggiorno e le preferenze personali associate al soggiorno richiesto</li> </ul> <p>I dati saranno archiviati, elaborati e, ove richiesto dalla legge, trasmessi a terzi (quali autorità pubbliche, associazioni turistiche ecc.) nell’ottica della fornitura dei nostri servizi.</p> <p>I Suoi dati non saranno trasmessi a paesi terzi.</p> <p>In caso di Suo rifiuto a conferirci i Suoi dati anagrafici, dei documenti di viaggio e relativi alle coordinate bancarie non saremo in grado di adempiere agli obblighi contrattuali e di accoglierLa presso la nostra struttura.</p> <p>I Suoi dati non verranno impiegati in processi decisionali automatizzati, compresa la profilazione.</p> <p>Le basi legali per questi processi di elaborazione dei dati sono:</p> <ul> <li>l'adempimento dei nostri obblighi precontrattuali e contrattuali nei Suoi confronti</li> <li>il consenso da Lei ottenuto</li> <li>gli obblighi legali, contrattuali o altri obblighi legali a cui siamo tenuti (come ad esempio gli obblighi in materia di contabilità, diritto fiscale e doganale, derivanti da contratti, informativa o contenziosi)</li> <li>i nostri interessi legittimi (come ad esempio migliorare il nostro servizio ai clienti, l’attività di pubblicità diretta o l'esercizio dei nostri interessi legali).</li> </ul> <p>La durata della conservazione dipende dalla durata del rapporto commerciale, dal consenso da parte Sua, dagli obblighi legali di conservazione e dagli obblighi legali a cui siamo sottoposti.</p> <p>Può richiedere informazioni sui Suoi dati personali da noi custoditi gratuitamente in qualsiasi momento. Come interessato ha anche il diritto di revoca, consultazione, modificazione, cancellazione e distruzione dei dati, nella misura in cui non ci sia alcun obbligo legale di conservazione da parte nostra. Esercitando il Suo diritto di revoca, tutti i Suoi dati saranno irrimediabilmente cancellati, a meno che non vengano violate disposizioni normative di rango superiore.</p> <p>Per ulteriori informazioni sui Suoi diritti La preghiamo di contattarci su <strong>info@</strong><strong>brandlgut.com</strong>, saremo felici di aiutarLa. Per eventuali reclami, il Garante per la protezione dei dati personali è: Garante per la protezione dei dati personali Piazza di Monte Citorio, 115/121, 00186 Roma Fax: (+39) 06.69677.3785, Telefono: (+39) 06.696771, E-mail: garante@gpdp.it.</p> <p>Cookies</p> <p>Un cookie è un piccolo file di lettere e numeri che viene salvato sul vostro computer quando accedete a determinati siti web. I cookie permettono ad un sito web di riconoscere il computer di un utente. Un cookie di per sé non contiene né raccoglie informazioni. I cookie possono essere utilizzati nella pubblicità comportamentale per individuare gli utenti che condividono un interesse particolare al fine di sottoporre loro messaggi pubblicitari più pertinenti.</p> <ul> <li><a href=\"http://it.wikipedia.org/wiki/Cookie\" rel=\"noopener\">Ulteriori informazioni sui cookie su Wikipedia</a></li> <li><a href=\"http://www.garanteprivacy.it/cookie\" rel=\"noopener\">Informazioni sui cookie su sito del Garante per la protezione dei dati personali</a></li> </ul> <p>Questo sito web utilizza da un lato cookie tecnici che vengono utilizzati per la navigazione, la funzione e la migliorazione delle prestazioni del sito e dall'altra parte permette a terzi di rilasciare cookies. Questi cookie di terze parti potrebbero essere cookie tecnici, ma anche cookie per la profilazione, che vengono utilizzati per l'analisi statistica e per la raccolta di dati al fine di inviare all'utente messaggi pubblicitari che li interessano (cookie di profilazione per il marketing e retargeting).</p> <p>Utenti possono disattivare i cookie.</p> <p><strong>Attenzione</strong>, se si sceglie di disabilitare o rifiutare i cookie, potrebbe succedere che alcune parti del sito non potranno essere visualizzate o che non funzionino correttamente.</p> <p>Per disattivare o rifiutare i cookies consultare questi link:</p> <p><strong>Per disabilitare i cookie nei browser più diffusi:</strong></p> <ul> <li><a href=\"https://support.mozilla.org/it/kb/Attivare%20e%20disattivare%20i%20cookie\" rel=\"noopener\">Mozilla Firefox</a></li> <li><a href=\"http://windows.microsoft.com/it-IT/windows7/Block-enable-or-allow-cookies\" rel=\"noopener\">Windows Internet Explorer</a></li> <li><a href=\"https://support.google.com/chrome/answer/95647?hl=it\" rel=\"noopener\">Google Chrome</a></li> <li><a href=\"http://help.opera.com/Windows/10.00/it/cookies.html\" rel=\"noopener\">Opera</a></li> <li><a href=\"https://support.apple.com/it-it/HT201265\" rel=\"noopener\">Apple Safari</a></li> </ul> <p><strong>Pagine di informazioni per i cookie di terze parti:</strong></p> <ul> <li><a href=\"http://www.google.com/intl/it/policies/\" rel=\"noopener\">Google</a></li> <li><a href=\"http://www.google.com/intl/it/policies/technologies/cookies/\" rel=\"noopener\">Google Analytics</a></li> <li><a href=\"http://www.google.com/intl/it/policies/technologies/cookies/\" rel=\"noopener\">Youtube</a></li> <li><a href=\"http://www.google.com/intl/it/policies/technologies/cookies/\" rel=\"noopener\">Google Maps</a></li> <li><a href=\"http://policies.peer.biz/it/cookies-dei-widgets/\" rel=\"noopener\">Peer</a></li> </ul> <p>Per ulteriori informazioni su come potete disattivate e / o cancellare i cookie visitate il sito web gestito da European Interactive Digital Advertising Alliance (EDAA) all’indirizzo <a href=\"http://www.youronlinechoices.eu/\" rel=\"noopener\">www.youronlinechoices.eu</a></p> <p>Logfiles</p> <p>Ogni volta che si accede al nostro sito Web, il nostro sistema raccoglie automaticamente dati e informazioni dal sistema informatico del computer chiamante. I seguenti dati vengono raccolti:</p> <ul> <li>Informazioni sul tipo di browser e sulla versione utilizzata</li> <li>Il sistema operativo dell'utente</li> <li>Il fornitore di servizi Internet dell'utente</li> <li>L'indirizzo IP dell'utente</li> <li>Data e ora di accesso</li> <li>Siti web dai quali il sistema dell'utente viene al nostro sito web</li> <li>Siti web a cui si accede dal sistema dell'utente attraverso il nostro sito Web</li> </ul> <p>Il salvataggio viene eseguito per garantire la funzionalità del sito Web. Inoltre, i dati vengono utilizzati per ottimizzare il sito Web e garantire la sicurezza dei nostri sistemi informatici. Un'analisi dei dati per scopi di marketing non ha luogo in questo contesto.</p> <p>A tal fine è nostro legittimo interesse il trattamento di questi dati ai sensi dell'articolo 6 (1) lett. f RGPD.</p> <p>I dati saranno cancellati non appena non sono più neccessare al fine della loro raccolta.</p> <p><strong>Google Analytics</strong></p> <p>Questo sito web utilizza Google Analytics, un servizio di analisi dei dati web della Google Inc. (\"Google\"). Google Analytics utilizza “cookies”, file di testo, che vengono memorizzati nel vostro computer e consentono l’analisi dell’utilizzo del sito web da parte dell’utente. Le informazioni generate dal cookie sul vostro utilizzo del sito vengono di regola trasmesse ad un server di Google negli USA e memorizzate.<br> <br> In caso di attivazione di IP anonimo su questo sito web, il vostro indirizzo IP verrà prima troncato da Google negli Stati membri dell’Unione Europea o di altri Stati facenti parte dell’Accordo sullo Spazio Economico Europeo. Solo in casi eccezionali viene inviato l’indirizzo IP completo ad un server di Google negli USA e qui troncato. Su questo sito web è attivato l’IP anonimo. A nome dell’operatore di questo sito, Google utilizzerà le informazioni allo scopo di esaminare il vostro utilizzo del sito, compilare report sulle attività per gli operatori del sito web e fornire loro altri servizi relativi alle attività del sito e all'utilizzo di Internet.<br> <br> L’indirizzo IP trasmesso da Google in ambito Google Analytics non collegherà il vostro indirizzo IP a nessun altro dato posseduto da Google. Potete rifiutare l’utilizzo di cookies, selezionando la relativa impostazione sul vostro browser, si consideri tuttavia che ciò potrebbe impedirvi di utilizzare completamente tutte le funzionalità di questo sito web. Potete inoltre impedire a Google l’acquisizione dei dati generati dal cookie ed attinenti il vostro utilizzo del sito web (incl. il vostro indirizzo IP), ed altresì l’elaborazione degli stessi dati da parte di Google, installando il plugin per browser disponibile al seguente link: <a href=\"http://tools.google.com/dlpage/gaoptout?hl=it\" rel=\"noopener\">http://tools.google.com/dlpage/gaoptout?hl=it</a>. </p>"
+ }
+}

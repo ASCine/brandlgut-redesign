@@ -1,0 +1,12 @@
+{
+  "name": "brandlgut-redesign",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "images": "node scripts/images.mjs",
+    "build": "node build.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.5"
+  }
+}

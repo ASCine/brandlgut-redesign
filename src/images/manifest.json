@@ -1,0 +1,518 @@
+{
+ "activities/essen": {
+  "w": 128,
+  "h": 128,
+  "widths": [
+   128
+  ]
+ },
+ "activities/freizeit": {
+  "w": 128,
+  "h": 128,
+  "widths": [
+   128
+  ]
+ },
+ "activities/kunst": {
+  "w": 128,
+  "h": 128,
+  "widths": [
+   128
+  ]
+ },
+ "activities/markt": {
+  "w": 128,
+  "h": 128,
+  "widths": [
+   128
+  ]
+ },
+ "activities/wandern": {
+  "w": 128,
+  "h": 128,
+  "widths": [
+   128
+  ]
+ },
+ "activities/winter": {
+  "w": 128,
+  "h": 128,
+  "widths": [
+   128
+  ]
+ },
+ "diegassers_2018": {
+  "w": 533,
+  "h": 800,
+  "widths": [
+   480,
+   533
+  ]
+ },
+ "galerie-01/01-das-ist-unser-brandlgut": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850,
+   1600
+  ]
+ },
+ "galerie-01/02-das-brandlgut-am-abend": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850,
+   1600
+  ]
+ },
+ "galerie-01/03-das-brandlgut-im-schnee": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "galerie-01/04-entspannen-sie-auf-der-oberen-sonnenterrasse": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "galerie-01/05-entspannen-sie-auf-der-unteren-sonnenterrasse": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "galerie-01/06-entspannung-und-spass-fuer-kinder": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "galerie-01/07-unser-fruehstuecksraum": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "galerie-01/08-zwei-hausgemachte-marmeladen-sind-nur-ein-teil-unserer-fruehstuecksauswahl": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "galerie-01/09-taeglich-frisches-obst-fuer-sie-zum-geniessen": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "galerie-01/10-thila-moechte-spielen": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "galerie-01/11-unsere-huehner-finden-sie-ueberall-auf-dem-hof": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "galerie-01/12-eine-unserer-katzen": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "galerie-01/13-unser-wein": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "galerie-01/14-einer-unserer-historischen-traktoren": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "galerie-01/15-christuskreuz": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "headers/slideshow_aussicht": {
+  "w": 780,
+  "h": 220,
+  "widths": [
+   480,
+   780
+  ]
+ },
+ "headers/slideshow_aussicht2": {
+  "w": 780,
+  "h": 220,
+  "widths": [
+   480,
+   780
+  ]
+ },
+ "headers/slideshow_blumenkanne": {
+  "w": 780,
+  "h": 220,
+  "widths": [
+   480,
+   780
+  ]
+ },
+ "headers/slideshow_eier": {
+  "w": 780,
+  "h": 220,
+  "widths": [
+   480,
+   780
+  ]
+ },
+ "headers/slideshow_fruehstuecksraum": {
+  "w": 780,
+  "h": 220,
+  "widths": [
+   480,
+   780
+  ]
+ },
+ "headers/slideshow_gassers": {
+  "w": 780,
+  "h": 220,
+  "widths": [
+   480,
+   780
+  ]
+ },
+ "headers/slideshow_gut": {
+  "w": 780,
+  "h": 220,
+  "widths": [
+   480,
+   780
+  ]
+ },
+ "headers/slideshow_gut2": {
+  "w": 780,
+  "h": 220,
+  "widths": [
+   480,
+   780
+  ]
+ },
+ "headers/slideshow_gut3": {
+  "w": 780,
+  "h": 220,
+  "widths": [
+   480,
+   780
+  ]
+ },
+ "headers/slideshow_gut4": {
+  "w": 780,
+  "h": 220,
+  "widths": [
+   480,
+   780
+  ]
+ },
+ "headers/slideshow_pfau": {
+  "w": 780,
+  "h": 220,
+  "widths": [
+   480,
+   780
+  ]
+ },
+ "headers/slideshow_thila": {
+  "w": 780,
+  "h": 220,
+  "widths": [
+   480,
+   780
+  ]
+ },
+ "headers/slideshow_trauben2": {
+  "w": 780,
+  "h": 220,
+  "widths": [
+   480,
+   780
+  ]
+ },
+ "headers/slideshow_tuer": {
+  "w": 780,
+  "h": 220,
+  "widths": [
+   480,
+   780
+  ]
+ },
+ "headers/slideshow_wein2": {
+  "w": 780,
+  "h": 220,
+  "widths": [
+   480,
+   780
+  ]
+ },
+ "headers/slideshow_wein3": {
+  "w": 780,
+  "h": 220,
+  "widths": [
+   480,
+   780
+  ]
+ },
+ "headers/slideshow_weinreeben": {
+  "w": 780,
+  "h": 220,
+  "widths": [
+   480,
+   780
+  ]
+ },
+ "headers/slideshow_zimmer": {
+  "w": 780,
+  "h": 220,
+  "widths": [
+   480,
+   780
+  ]
+ },
+ "rooms/deluxe/01_deluxe_schlafzimmer": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "rooms/deluxe/02_deluxe_bett": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "rooms/deluxe/03_deluxe_kueche": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "rooms/deluxe/04_deluxe_kuechenausstattung": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "rooms/deluxe/05_deluxe_badewanne": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "rooms/deluxe/06_deluxe_bad": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "rooms/deluxe/07_deluxe_entree": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "rooms/deluxe/08_deluxe_essbereich": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "rooms/standard/01_standard_bett": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "rooms/standard/02_standard_zimmer": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "rooms/standard/03_standard_balkon": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "rooms/standard/04_standard_bad": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "rooms/standard/05_standard_zimmer": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "rooms/standard/06_standard_bett": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "rooms/standard/07_standard_bad": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "rooms/superior-plus/01_superiorplus_zimmer": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "rooms/superior-plus/02_superiorplus_bett": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "rooms/superior-plus/03_superiorplus_terrasse": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "rooms/superior-plus/04_superiorplus_bad": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "rooms/superior/01_superior_bett": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "rooms/superior/02_superior_zimmer": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "rooms/superior/03_superior_balkon": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "rooms/superior/04_superior_zimmer": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "rooms/superior/05_superior_bad": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ },
+ "rooms/superior/06_superior_dusche": {
+  "w": 850,
+  "h": 478,
+  "widths": [
+   480,
+   850
+  ]
+ }
+}

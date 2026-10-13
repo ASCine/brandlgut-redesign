@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unverbindliche Anfrage – Brandlgut</title>
+<meta name="description" content="Mit dem folgenden Formular können Sie eine unverbindliche Reservierungs-Anfrage stellen. Diese Anfrage entspricht keiner Buchung – wir bitten dafür um Vers">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Unverbindliche Anfrage – Brandlgut">
+<meta property="og:description" content="Mit dem folgenden Formular können Sie eine unverbindliche Reservierungs-Anfrage stellen. Diese Anfrage entspricht keiner Buchung – wir bitten dafür um Vers">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../../assets/img/galerie-01/01-das-ist-unser-brandlgut-850.webp">
+<link rel="alternate" hreflang="de" href="../../de/anfrage/">
+<link rel="alternate" hreflang="en" href="../../en/request/">
+<link rel="alternate" hreflang="it" href="../../it/richiesta/">
+<link rel="icon" href="../../assets/img/logo-mark.svg" type="image/svg+xml">
+<link rel="preload" href="../../assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../assets/fonts/figtree-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body class="page-request">
+<a class="skip" href="#main">Zum Inhalt</a>
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="brand" href="../../de/" aria-label="Brandlgut">
+      <img class="brand-mark" src="../../assets/img/logo-mark.svg" alt="" width="48" height="48">
+      <img class="brand-word" src="../../assets/img/logo-word.svg" alt="Brandlgut" width="138" height="38">
+    </a>
+    <nav class="nav" id="nav" aria-label="Menü">
+      <a class="nav-a" href="../../de/hof/">Unser Hof</a><a class="nav-a" href="../../de/zimmer/">Zimmer &amp; Preise</a><a class="nav-a" href="../../de/aktivitaeten/">Aktivitäten</a><a class="nav-a" href="#kontakt">Kontakt</a>
+      <a class="btn nav-cta" href="../../de/anfrage/">Anfrage senden</a>
+    </nav>
+    <div class="lang"><a class="lang-a is-active" href="../../de/anfrage/" hreflang="de" lang="de" title="Deutsch" aria-current="true">DE</a><a class="lang-a" href="../../en/request/" hreflang="en" lang="en" title="English">EN</a><a class="lang-a" href="../../it/richiesta/" hreflang="it" lang="it" title="Italiano">IT</a></div>
+    <a class="btn btn-sm hdr-cta" href="../../de/anfrage/">Anfrage senden</a>
+    <button class="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menü"><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+<section class="phead phead-plain">
+  <div class="wrap phead-in">
+    <div class="phead-txt">
+      <p class="eyebrow">Reservierung</p>
+      <h1>Unverbindliche Anfrage</h1>
+      <p class="lead">Mit dem folgenden Formular können Sie eine unverbindliche Reservierungs-Anfrage stellen. Diese Anfrage entspricht keiner Buchung – wir bitten dafür um Verständnis. Nachdem wir die Anfrage erhalten haben, werden wir Ihnen umgehend den gewünschten Termin bestätigen oder ein alternatives Angebot unterbreiten.</p>
+      
+    </div>
+    
+  </div>
+</section>
+
+<section class="sec sec-tight">
+  <div class="wrap req">
+    <form class="req-form card" id="req-form" novalidate>
+      <h2>Ihre Anfrage</h2>
+      <div class="fields">
+        <div class="field"><label for="f-arrival">Anreise <i aria-hidden="true">*</i></label><input id="f-arrival" name="arrival" type="date" required><p class="hint" data-hint="arrival" aria-live="polite"></p></div>
+        <div class="field"><label for="f-departure">Abreise <i aria-hidden="true">*</i></label><input id="f-departure" name="departure" type="date" required><p class="hint" data-hint="departure" aria-live="polite"></p></div>
+      </div>
+      <fieldset class="field field-rooms">
+        <legend>Zimmerkategorie <i aria-hidden="true">*</i></legend>
+        <div class="room-opts">
+          <label class="room-opt"><input type="radio" name="room" value="standard" required>
+            <img src="../../assets/img/rooms/standard/01_standard_bett-480.webp" alt="" width="160" height="90" loading="lazy">
+            <strong>Standard</strong><span>110 € / Nacht</span></label>
+          <label class="room-opt"><input type="radio" name="room" value="superior" required>
+            <img src="../../assets/img/rooms/superior/01_superior_bett-480.webp" alt="" width="160" height="90" loading="lazy">
+            <strong>Superior</strong><span>120 € / Nacht</span></label>
+          <label class="room-opt"><input type="radio" name="room" value="deluxe" required>
+            <img src="../../assets/img/rooms/superior-plus/01_superiorplus_zimmer-480.webp" alt="" width="160" height="90" loading="lazy">
+            <strong>Deluxe</strong><span>120 € / Nacht</span></label>
+          <label class="room-opt"><input type="radio" name="room" value="suite" required>
+            <img src="../../assets/img/rooms/deluxe/01_deluxe_schlafzimmer-480.webp" alt="" width="160" height="90" loading="lazy">
+            <strong>Suite</strong><span>160 € / Nacht</span></label>
+        </div>
+        <p class="hint" data-hint="room" aria-live="polite"></p>
+      </fieldset>
+      <div class="fields">
+        <div class="field"><label for="f-adults">Erwachsene <i aria-hidden="true">*</i></label><select id="f-adults" name="adults"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option></select><p class="hint" data-hint="adults" aria-live="polite"></p></div>
+        <div class="field"><label for="f-children">Kinder <em>optional</em></label><select id="f-children" name="children"><option selected>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select><p class="hint" data-hint="children" aria-live="polite"></p></div>
+      </div>
+
+      <h2>Ihre Kontaktdaten</h2>
+      <div class="fields">
+        <div class="field"><label for="f-salutation">Anrede <i aria-hidden="true">*</i></label><select id="f-salutation" name="salutation" required><option value="">Bitte auswählen</option><option>Frau</option><option>Herr</option><option>Familie</option><option>Keine Angabe</option></select><p class="hint" data-hint="salutation" aria-live="polite"></p></div>
+        <div class="field field-spacer" aria-hidden="true"></div>
+        <div class="field"><label for="f-first">Vorname <em>optional</em></label><input id="f-first" name="first" type="text" autocomplete="given-name"><p class="hint" data-hint="first" aria-live="polite"></p></div>
+        <div class="field"><label for="f-last">Nachname <i aria-hidden="true">*</i></label><input id="f-last" name="last" type="text" autocomplete="family-name" required><p class="hint" data-hint="last" aria-live="polite"></p></div>
+        <div class="field"><label for="f-email">E-Mail <i aria-hidden="true">*</i></label><input id="f-email" name="email" type="email" autocomplete="email" required><p class="hint" data-hint="email" aria-live="polite"></p></div>
+        <div class="field"><label for="f-phone">Telefon <em>optional</em></label><input id="f-phone" name="phone" type="tel" autocomplete="tel"><p class="hint" data-hint="phone" aria-live="polite"></p></div>
+        <div class="field field-tall"><label for="f-address">Adresse <em>optional</em></label><textarea id="f-address" name="address" rows="3" autocomplete="street-address"></textarea><p class="hint" data-hint="address" aria-live="polite"></p></div>
+        <div class="field field-tall"><label for="f-notes">Anmerkungen <em>optional</em></label><textarea id="f-notes" name="notes" rows="3"></textarea><p class="hint" data-hint="notes" aria-live="polite"></p></div>
+      </div>
+      <div class="field field-consent">
+        <label class="check"><input type="checkbox" name="consent" required><span>Ich habe die <a href="../../de/datenschutz/" target="_blank" rel="noopener">Datenschutzerklärung</a> gelesen und stimme zu. <i aria-hidden="true">*</i></span></label>
+        <p class="hint" data-hint="consent" aria-live="polite"></p>
+      </div>
+      <div class="btn-row">
+        <button class="btn" type="submit">Anfrage senden</button>
+        <button class="btn btn-ghost" type="reset">Zurücksetzen</button>
+      </div>
+    </form>
+
+    <div class="req-ok card" id="req-ok" hidden>
+      <span class="ok-ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span>
+      <h2>Vielen Dank!</h2>
+      <p>Dies ist eine Demo-Seite: Ihre Anfrage wurde noch nicht übermittelt. Mit einem Klick können Sie sie per E-Mail senden.</p>
+      <dl class="ok-list" id="ok-list"></dl>
+      <div class="btn-row">
+        <a class="btn" id="ok-mail" href="mailto:info@brandlgut.com">Per E-Mail senden</a>
+        <button class="btn btn-ghost" type="button" id="ok-again">Neue Anfrage</button>
+      </div>
+    </div>
+
+    <aside class="req-sum card" aria-label="Ihre Auswahl">
+      <div class="sum-img"><img id="sum-img" src="../../assets/img/galerie-01/01-das-ist-unser-brandlgut-480.webp" data-default="../../assets/img/galerie-01/01-das-ist-unser-brandlgut-480.webp" alt="" width="480" height="270"></div>
+      <div class="sum-body">
+        <p class="eyebrow">Ihre Auswahl</p>
+        <p class="sum-room" id="sum-room">Bitte Daten und Zimmer wählen</p>
+        <dl class="sum-rows">
+          <dt>Aufenthalt</dt><dd id="sum-stay">–</dd>
+          <dt>Geschätzter Zimmerpreis</dt><dd id="sum-price">–</dd>
+        </dl>
+        <p class="sum-note">zzgl. Frühstück, unverbindlich</p>
+        <p class="sum-min" id="sum-min"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg><span>Mindestaufenthalt: 3 Nächte</span></p>
+        <ul class="sum-contact">
+          <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3.5h3l1.5 4-2 1.5a11 11 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.5 5.7a2 2 0 0 1 2-2.2Z"/></svg><a href="tel:+393492134607">+39 349 2134607</a></li>
+          <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="2.5"/><path d="m4.5 7.5 7.5 6 7.5-6"/></svg><a href="mailto:info@brandlgut.com">info@brandlgut.com</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="sec sec-contact" id="kontakt">
+  <div class="wrap contact">
+    <div class="contact-txt">
+      <p class="eyebrow">Lage &amp; Kontakt</p>
+      <h2>So finden Sie uns</h2>
+      <address>Brandlgut<br>Moritzinger Weg 63<br>39100 Bozen, Italien</address>
+      <dl class="contact-rows">
+        <dt>Mobil</dt><dd><a href="tel:+393492134607">+39 349 2134607</a></dd>
+        <dt>E-Mail</dt><dd><a href="mailto:info@brandlgut.com">info@brandlgut.com</a></dd>
+        <dt>Anreise</dt><dd>17:00 – 20:00 Uhr</dd>
+        <dt>Abreise</dt><dd>9:00 – 10:30 Uhr</dd>
+      </dl>
+    </div>
+    <div class="map">
+      <img class="map-img" src="../../assets/img/galerie-01/02-das-brandlgut-am-abend-850.webp" srcset="../../assets/img/galerie-01/02-das-brandlgut-am-abend-480.webp 480w, ../../assets/img/galerie-01/02-das-brandlgut-am-abend-850.webp 850w, ../../assets/img/galerie-01/02-das-brandlgut-am-abend-1600.webp 1600w" sizes="(min-width: 960px) 620px, 100vw" width="850" height="478" alt="" loading="lazy" decoding="async">
+      <div class="map-card">
+        <span class="map-pin"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+        <strong>Moritzinger Weg 63</strong>
+        <span>39100 Bozen, Italien</span>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Brandlgut+Moritzinger+Weg+63+Bozen" target="_blank" rel="noopener">Route planen</a>
+        <small>Die Karte öffnet sich erst nach Ihrem Klick in Google Maps.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap cta-in">
+    <h2>Wann dürfen wir Sie begrüßen?</h2>
+    <p>Senden Sie uns eine unverbindliche Anfrage – wir melden uns umgehend.</p>
+    <div class="btn-row btn-row-center">
+      <a class="btn btn-light" href="../../de/anfrage/">Anfrage senden</a>
+      <a class="btn btn-outline-light" href="tel:+393492134607">+39 349 2134607</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap ftr-in">
+    <a class="brand" href="../../de/" aria-label="Brandlgut">
+      <img class="brand-mark" src="../../assets/img/logo-mark.svg" alt="" width="48" height="48" loading="lazy">
+      <img class="brand-word" src="../../assets/img/logo-word.svg" alt="Brandlgut" width="138" height="38" loading="lazy">
+    </a>
+    <p class="ftr-copy">© 2026 Brandlgut · Familie Gasser</p>
+    <nav class="ftr-nav">
+      <a href="../../de/impressum/">Impressum</a>
+      <a href="../../de/datenschutz/">Datenschutz</a>
+    </nav>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="mbar-a" href="tel:+393492134607"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3.5h3l1.5 4-2 1.5a11 11 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.5 5.7a2 2 0 0 1 2-2.2Z"/></svg><span>Anrufen</span></a>
+  <a class="mbar-a mbar-primary" href="../../de/anfrage/"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="2.5"/><path d="m4.5 7.5 7.5 6 7.5-6"/></svg><span>Anfrage senden</span></a>
+</div>
+
+<dialog class="lb" aria-label="Foto">
+  <button class="lb-btn lb-close" type="button" aria-label="Schließen"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+  <button class="lb-btn lb-prev" type="button" aria-label="Zurück"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m14.5 6-6 6 6 6"/></svg></button>
+  <figure class="lb-fig"><img class="lb-img" alt="" width="850" height="478"><figcaption class="lb-cap"></figcaption></figure>
+  <button class="lb-btn lb-next" type="button" aria-label="Weiter"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9.5 6 6 6-6 6"/></svg></button>
+</dialog>
+<script type="application/json" id="req-i18n">{"err":{"required":"Bitte ausfüllen","email":"Bitte gültige E-Mail angeben","dates":"Abreise muss nach der Anreise liegen","consent":"Bitte zustimmen"},"sum":{"title":"Ihre Auswahl","estimate":"Geschätzter Zimmerpreis","note":"zzgl. Frühstück, unverbindlich","minStay":"Mindestaufenthalt: 3 Nächte","empty":"Bitte Daten und Zimmer wählen","stay":"Aufenthalt"},"labels":{"arrival":"Anreise","departure":"Abreise","room":"Zimmerkategorie","adults":"Erwachsene","children":"Kinder","salutation":"Anrede","first":"Vorname","last":"Nachname","address":"Adresse","email":"E-Mail","phone":"Telefon","notes":"Anmerkungen"},"unit":{"night":"Nacht","nights":"Nächte","perNight":"/ Nacht","from":"ab","guests":"Personen","exclBreakfast":"exkl. Frühstück","photo":"Foto"},"subject":"Anfrage via Homepage","mail":"info@brandlgut.com","rooms":{"standard":{"name":"Standard","price":110,"img":"../../assets/img/rooms/standard/01_standard_bett-480.webp"},"superior":{"name":"Superior","price":120,"img":"../../assets/img/rooms/superior/01_superior_bett-480.webp"},"deluxe":{"name":"Deluxe","price":120,"img":"../../assets/img/rooms/superior-plus/01_superiorplus_zimmer-480.webp"},"suite":{"name":"Suite","price":160,"img":"../../assets/img/rooms/deluxe/01_deluxe_schlafzimmer-480.webp"}},"locale":"de-DE"}</script>
+<script src="../../assets/site.js" defer></script>
+</body>
+</html>
