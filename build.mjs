@@ -3,12 +3,19 @@
 // Run `node scripts/images.mjs` first whenever photos in src/images/original change.
 import { readFile, writeFile, mkdir, copyFile } from 'node:fs/promises';
 import { join } from 'node:path';
+import { createHash } from 'node:crypto';
 import { LANGS, SLUGS, CONTACT, ROOMS, FARM_PHOTOS, POLICY_ICONS, T } from './src/content.mjs';
 
 const OUT = 'docs';
 const manifest = JSON.parse(await readFile('src/images/manifest.json', 'utf8'));
 const longTexts = JSON.parse(await readFile('src/content/long-texts.json', 'utf8'));
 const YEAR = 2026;
+
+// Stylesheet and script get their content hash in the address, so browsers fetch a changed file
+// at once instead of showing the cached one for another ten minutes.
+const version = async file => createHash('sha1').update(await readFile(file)).digest('hex').slice(0, 8);
+const CSS_V = await version('src/styles.css');
+const JS_V = await version('src/site.js');
 
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
@@ -79,7 +86,7 @@ ${alternates}
 <link rel="icon" href="${root}assets/img/logo-mark.svg" type="image/svg+xml">
 <link rel="preload" href="${root}assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="${root}assets/fonts/figtree-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="${root}assets/styles.css">
+<link rel="stylesheet" href="${root}assets/styles.css?v=${CSS_V}">
 </head>
 <body class="page-${key}">
 <a class="skip" href="#main">${esc(t.skip)}</a>
@@ -139,7 +146,7 @@ ${band ? `
   <button class="lb-btn lb-next" type="button" aria-label="${esc(t.btn.next)}">${icon('right')}</button>
 </dialog>
 ${extraScript}
-<script src="${root}assets/site.js" defer></script>
+<script src="${root}assets/site.js?v=${JS_V}" defer></script>
 </body>
 </html>
 `;
