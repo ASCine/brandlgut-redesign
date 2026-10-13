@@ -37,6 +37,13 @@ npm run images       # after changing photos or the colour matching
 npm run build        # after changing copy, templates, CSS or JS
 ```
 
+## Photo rules
+
+- The photos are the photographer's finished work. The only processing is the colour matching of the room
+  photos (mixed daylight / lamp light, one shared white) plus resizing and compression.
+- No retouching of surfaces: an attempt to brighten and smooth the suite's walls looked unnatural and was
+  reverted. Changes of that kind belong in the original files, not in the build.
+
 ## Copy and layout rules
 
 - Each fact is said once per page; contact details appear once (footer), the address once (home, "find us").
